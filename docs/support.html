@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holdings — Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+            color: #1d1d1f;
+            background: #fff;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .header {
+            text-align: center;
+            padding: 80px 24px 48px;
+            background: linear-gradient(180deg, #f5f5f7 0%, #fff 100%);
+        }
+        .header h1 {
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            margin-bottom: 12px;
+        }
+        .header p {
+            font-size: 19px;
+            color: #6e6e73;
+        }
+        section {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        .contact {
+            text-align: center;
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 40px 32px;
+            margin-bottom: 48px;
+        }
+        .contact p {
+            font-size: 17px;
+            color: #6e6e73;
+            margin-bottom: 16px;
+        }
+        .contact a {
+            display: inline-block;
+            background: #0071e3;
+            color: #fff;
+            padding: 12px 32px;
+            border-radius: 980px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .contact a:hover { background: #0077ed; }
+        .contact .note {
+            font-size: 14px;
+            color: #86868b;
+            margin-top: 12px;
+        }
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            letter-spacing: -0.2px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+        }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-item h3::after {
+            content: '+';
+            font-size: 22px;
+            font-weight: 300;
+            color: #86868b;
+            transition: transform 0.2s;
+        }
+        .faq-item.open h3::after {
+            transform: rotate(45deg);
+        }
+        .faq-item p {
+            font-size: 15px;
+            color: #6e6e73;
+            line-height: 1.6;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        .faq-item.open p {
+            max-height: 400px;
+            padding-top: 4px;
+        }
+        footer {
+            text-align: center;
+            padding: 48px 24px;
+            color: #6e6e73;
+            font-size: 14px;
+            border-top: 1px solid #e0e0e0;
+        }
+        footer a { color: #0071e3; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="assets/logo/logo.png" alt="Holdings app icon" width="64" height="64" style="border-radius: 14px; margin-bottom: 16px;">
+        <h1>Support</h1>
+        <p>We're here to help you get the most out of Holdings.</p>
+    </div>
+
+    <section>
+        <div class="contact">
+            <p>Having trouble or want to report a bug?</p>
+            <a href="mailto:gianfilippo.cisternino@gmail.com">Email us</a>
+            <p class="note">We typically respond within 24&ndash;48 hours.</p>
+        </div>
+
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item open">
+            <h3>How do I add my first asset?</h3>
+            <p>Open Holdings and tap the plus button. Pick a category (cash, equity, ETF, real estate, etc.). For tradable assets, search a ticker — Holdings pulls the live price from Yahoo Finance. For cash and debts, enter the value and currency yourself.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Where do live prices come from?</h3>
+            <p>Yahoo Finance — for stocks, ETFs, bonds, crypto, and FX rates. Prices refresh when you open the app or pull to refresh on the asset list.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How does iCloud sync work?</h3>
+            <p>If you are signed in to iCloud on all your devices and have iCloud Drive enabled, Holdings will sync your data through your private iCloud CloudKit container. Changes typically propagate within a few seconds. We never see your data — it travels directly between your devices through Apple's infrastructure.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Why does an EUR asset show in USD on the home page?</h3>
+            <p>Holdings totals everything in your display currency, which is set in Settings. Change it to EUR (or any other supported currency) and totals will reconvert at live FX rates. Each individual asset still keeps its native currency in the detail view.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How are real-estate valuations calculated?</h3>
+            <p>For Italian properties, Holdings uses the official OMI dataset from the Agenzia delle Entrate (zone and property-type lookups), adjusted forward with the national house-price index. For US, Germany, and Spain it projects your purchase price using bundled annual HPI series. UK and France valuations are coming in a future update.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I link a mortgage to a property?</h3>
+            <p>Yes. When you add a real-estate asset, you can attach an existing debt as its mortgage. Holdings will show them paired in your net-worth view and compute equity automatically.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What does Holdings Pro unlock?</h3>
+            <p>Geography breakdown (your wealth distributed by country), real-estate valuations, net-worth goals, and PDF export. Pro is a one-time $19.99 purchase, no subscription. Family Sharing is supported, so one purchase covers your household.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I restore my Pro purchase on a new device?</h3>
+            <p>Open the paywall and tap "Restore purchases". As long as you're signed in to the same Apple ID that bought Pro, it will reactivate immediately. Family Sharing members can restore the same way.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I enable Face ID or Touch ID lock?</h3>
+            <p>Settings &gt; Biometric lock. Once enabled, Holdings will require Face ID or Touch ID every time you open the app or bring it back from the background.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What's required to run Holdings?</h3>
+            <p>macOS 15.6 or later, or iOS / iPadOS 18.6 or later. iCloud sync is optional but recommended.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I delete all my data?</h3>
+            <p>Remove Holdings from each device, then go to iOS Settings &gt; [your name] &gt; iCloud &gt; Manage Storage &gt; Holdings and delete the CloudKit data. This removes everything permanently.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="./">Home</a> &middot; <a href="privacy.html">Privacy Policy</a></p>
+        <p style="margin-top: 8px;">&copy; 2026 Gianfilippo Cisternino</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-item h3').forEach(q => {
+            q.addEventListener('click', () => {
+                q.parentElement.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>

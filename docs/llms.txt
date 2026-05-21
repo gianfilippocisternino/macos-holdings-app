@@ -1,0 +1,52 @@
+# Holdings — Personal Net-Worth Tracker for Mac and iPhone
+
+> A native macOS and iOS app for tracking your full net worth — investments, cash, real estate, and debts — across multiple currencies and countries. Data stays on your device, syncs via iCloud.
+
+## What is Holdings?
+
+Holdings is a personal net-worth tracker built natively for Apple platforms. It pulls live prices from Yahoo Finance for tradable assets (stocks, ETFs, bonds, crypto), converts everything into your chosen display currency with current FX rates, and adds real-estate valuations for properties in Italy (via the official OMI dataset) and HPI-based estimates for the US, Germany, and Spain.
+
+Your data lives only on your device and in your private iCloud account — there's no backend, no user account, no signup.
+
+## Key Features
+
+- **Twelve asset categories**: cash, equities, ETFs, bonds, crypto, commodities, real estate, debts, and more.
+- **Live market data**: Yahoo Finance for prices and FX, automatic ticker classification (EQUITY, BOND, ETF, CRYPTOCURRENCY) plus Morningstar fund-category suggestions.
+- **Multi-currency**: every asset keeps its native currency; totals reconcile in your chosen display currency across 12+ supported currencies.
+- **Real estate**: OMI valuations for Italian properties (by comune, zone, and property type), HPI-based estimates for US/DE/ES, optional purchase-price tracking, mortgage linking.
+- **Monthly history**: each asset records a value per month; net-worth chart and category breakdowns show trends over time.
+- **iCloud CloudKit sync**: data lives in your private iCloud container, syncs across all your Apple devices.
+- **Biometric lock**: optional Face ID / Touch ID gate.
+
+## How It Works
+
+1. Download Holdings from the App Store on Mac or iPhone.
+2. Add an asset — search a ticker for live prices, or enter cash/debt values manually.
+3. Holdings fetches prices and FX rates automatically.
+4. View your full net worth in one place, synced across all your devices via iCloud.
+
+## Pricing
+
+- **Free**: Track unlimited assets across all 12 categories. Live prices, FX conversion, monthly history. No account, no credit card.
+- **Holdings Pro**: $19.99 one-time purchase. Unlocks geography breakdown, real-estate valuations, net-worth goals, and PDF export. Family Sharing supported.
+
+## Privacy
+
+- Financial data (your assets, values, real-estate details) stays on your device and syncs only through your private iCloud CloudKit container. We don't have user accounts or a backend database.
+- Anonymous usage analytics through Firebase Analytics: which screens you visit, when you add or remove assets, when you change currency. No advertising identifier (IDFA), no personal data, no portfolio contents.
+- No App Tracking Transparency prompt — we don't track you across apps or websites.
+
+## Requirements
+
+- macOS 15.6 or later, or iOS / iPadOS 18.6 or later.
+- iCloud sign-in (optional, recommended for cross-device sync).
+
+## Links
+
+- Homepage: https://gianfilippocisternino.github.io/macos-holdings-app/
+- Support: https://gianfilippocisternino.github.io/macos-holdings-app/support.html
+- Privacy Policy: https://gianfilippocisternino.github.io/macos-holdings-app/privacy.html
+
+## About
+
+Built by Gianfilippo Cisternino. Holdings is a native SwiftUI app that runs on both macOS and iOS from a single codebase, designed to make personal financial visibility quick, private, and accurate.
