@@ -3,7 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holdings — Support</title>
+    <title>Holdings — Support &amp; FAQ</title>
+    <meta name="description" content="Support and FAQ for Holdings, a personal net-worth tracker for Mac and iPhone. Learn how to add assets, sync via iCloud, restore Pro purchases, link mortgages, and more.">
+    <link rel="canonical" href="https://gianfilippocisternino.github.io/macos-holdings-app/support.html">
+    <meta name="author" content="Gianfilippo Cisternino">
+    <meta property="og:title" content="Holdings — Support &amp; FAQ">
+    <meta property="og:description" content="Get help with Holdings: adding assets, iCloud sync, live prices, real-estate valuations, Pro purchase restore, biometric lock, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gianfilippocisternino.github.io/macos-holdings-app/support.html">
+    <meta property="og:image" content="https://gianfilippocisternino.github.io/macos-holdings-app/assets/logo/logo.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Holdings — Support &amp; FAQ">
+    <meta name="twitter:description" content="Get help with Holdings: adding assets, iCloud sync, live prices, real-estate valuations, and more.">
+    <meta name="twitter:image" content="https://gianfilippocisternino.github.io/macos-holdings-app/assets/logo/logo.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I add my first asset?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open Holdings and tap the plus button. Pick a category (cash, equity, ETF, real estate, etc.). For tradable assets, search a ticker — Holdings pulls the live price from Yahoo Finance. For cash and debts, enter the value and currency yourself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where do live prices come from?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yahoo Finance — for stocks, ETFs, bonds, crypto, and FX rates. Prices refresh when you open the app or pull to refresh on the asset list."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does iCloud sync work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you are signed in to iCloud on all your devices and have iCloud Drive enabled, Holdings will sync your data through your private iCloud CloudKit container. Changes typically propagate within a few seconds. We never see your data — it travels directly between your devices through Apple's infrastructure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does an EUR asset show in USD on the home page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Holdings totals everything in your display currency, which is set in Settings. Change it to EUR (or any other supported currency) and totals will reconvert at live FX rates. Each individual asset still keeps its native currency in the detail view."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are real-estate valuations calculated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For Italian properties, Holdings uses the official OMI dataset from the Agenzia delle Entrate (zone and property-type lookups), adjusted forward with the national house-price index. For US, Germany, and Spain it projects your purchase price using bundled annual HPI series. UK and France valuations are coming in a future update."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Holdings Pro unlock?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Geography breakdown (your wealth distributed by country), real-estate valuations, net-worth goals, and PDF export. Pro is a one-time $19.99 purchase, no subscription. Family Sharing is supported, so one purchase covers your household."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I restore my Pro purchase on a new device?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open the paywall and tap Restore purchases. As long as you're signed in to the same Apple ID that bought Pro, it will reactivate immediately. Family Sharing members can restore the same way."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's required to run Holdings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "macOS 15.6 or later, or iOS / iPadOS 18.6 or later. iCloud sync is optional but recommended."
+          }
+        }
+      ]
+    }
+    </script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
