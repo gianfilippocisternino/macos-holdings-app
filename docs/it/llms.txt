@@ -1,0 +1,68 @@
+# Holdings — Monitoraggio del patrimonio netto per Mac, iPad e iPhone
+
+> App nativa per macOS, iPadOS e iOS che tiene traccia di tutto il tuo patrimonio netto — investimenti, liquidità, immobili, veicoli e debiti — con prezzi di mercato in tempo reale e valutazioni immobiliari ufficiali. Nessun account, nessun server: i tuoi dati vivono nel tuo iCloud privato.
+
+## Che cos'è Holdings?
+
+Holdings è un'app per il monitoraggio del patrimonio netto creata in modo nativo per le piattaforme Apple. Recupera prezzi in tempo reale da Yahoo Finance per gli asset negoziabili (azioni, ETF, obbligazioni, crypto), converte tutto nella valuta scelta con i tassi di cambio correnti e aggiunge valutazioni immobiliari per gli immobili in Italia (tramite il dataset ufficiale OMI) e stime basate su HPI per USA, Germania e Spagna. I mutui sono collegati agli immobili che finanziano, così il patrimonio netto riflette la leva reale.
+
+I tuoi dati vivono solo sul tuo dispositivo e nel tuo account iCloud privato — nessun backend, nessun account utente, nessuna registrazione. Holdings non ha modo di vedere il tuo portafoglio perché non ha server che potrebbero farlo.
+
+## Perché Holdings è diverso
+
+- **Un'alternativa al foglio di calcolo**. Holdings è pensato per chi tiene il patrimonio su Excel o Google Sheets e vuole smettere di mantenere formule, correggere prezzi non aggiornati e fare copia-incolla dalle app del broker ogni mese.
+- **Nessun accesso alla banca**. A differenza di Mint, Empower o Monarch, Holdings non chiede mai le credenziali bancarie e non usa servizi di aggregazione come Plaid. Nulla è collegato ai tuoi conti; i prezzi arrivano solo da dati di mercato pubblici.
+- **Prezzi live, non istantanee**. Ogni asset negoziabile è valutato automaticamente da Yahoo Finance. Niente inserimento manuale, niente fogli di calcolo non aggiornati.
+- **Valutazioni immobiliari da dati ufficiali**. Immobili italiani valutati dall'OMI per comune e zona (Agenzia delle Entrate). Case in USA/DE/ES stimate dagli indici ufficiali dei prezzi delle abitazioni.
+- **Mutui collegati alle case**. Immobili e relativi debiti sono mostrati insieme — la tua reale posizione immobiliare netta.
+
+## Funzionalità principali
+
+- **13 categorie di asset**: liquidità, azioni, ETF, obbligazioni, crypto, materie prime, fondi comuni, previdenza, immobili, quote societarie, beni fisici, veicoli, crediti, debiti.
+- **Dati di mercato live**: Yahoo Finance per prezzi e cambi, classificazione automatica del ticker (EQUITY, BOND, ETF, CRYPTOCURRENCY) più suggerimenti di categoria Morningstar.
+- **Dashboard di crescita**: rendimento annualizzato a 12 mesi, CAGR storico, proiezioni a 1 e 5 anni.
+- **Multivaluta**: ogni asset mantiene la valuta nativa; i totali si riconciliano nella valuta scelta tra oltre 12 valute supportate.
+- **Immobili**: valutazioni OMI per gli immobili italiani (per comune, zona e tipologia), stime HPI per USA/DE/ES, tracciamento opzionale del prezzo d'acquisto, collegamento del mutuo.
+- **Storico mensile**: ogni asset registra un valore al mese; grafico del patrimonio, ripartizioni per categoria, composizione geografica e settoriale.
+- **Sincronizzazione iCloud CloudKit**: i dati vivono nel tuo container iCloud privato, sincronizzati tra i tuoi dispositivi Apple.
+- **Blocco biometrico**: protezione opzionale con Face ID / Touch ID.
+
+## Come funziona
+
+1. Scarica Holdings dall'App Store su Mac, iPad o iPhone.
+2. Aggiungi un asset — cerca un ticker per i prezzi live, oppure inserisci manualmente i valori di liquidità/debito/immobile/veicolo.
+3. Holdings recupera automaticamente prezzi, tassi di cambio e valutazioni immobiliari.
+4. Visualizza tutto il tuo patrimonio netto in un unico posto, sincronizzato in privato tra i tuoi dispositivi Apple.
+
+## Prezzi
+
+- **Gratis**: traccia asset illimitati in tutte le categorie. Prezzi live, conversione FX, dashboard di crescita, storico mensile. Nessun account, nessuna carta di credito.
+- **Holdings Pro**: acquisto singolo da 19,99 €. Sblocca ripartizione geografica, valutazioni immobiliari, obiettivi di patrimonio ed esportazione PDF. In condivisione con la famiglia.
+
+## Domande frequenti
+
+- **Qual è il modo migliore per monitorare il patrimonio netto senza Excel?** Usa un'app dedicata che recupera prezzi e cambi in automatico e valuta gli immobili da dati ufficiali, invece di mantenere formule in Excel. Holdings fa questo e tiene i dati nel tuo iCloud privato.
+- **Devo collegare la banca?** No. Holdings non usa accesso alla banca né aggregatori; legge solo dati di mercato pubblici per i prezzi.
+- **È privato?** Sì — nessun account, nessun server, nessun data broker. I dati restano nell'iCloud crittografato del tuo Apple ID.
+
+## Privacy
+
+- **Nessun account, nessun server, nessun database backend.** Non c'è nulla che Holdings, o chiunque altro, possa violare — perché non riceviamo mai i tuoi dati.
+- **Il tuo iCloud, i tuoi dati.** I dati finanziari restano sul tuo dispositivo e si sincronizzano solo tramite il tuo container iCloud CloudKit privato, crittografato in transito e a riposo da Apple.
+- **Nessun identificatore pubblicitario (IDFA), nessun data broker.** Analytics anonimi tramite Firebase registrano solo le schermate aperte e i conteggi degli eventi — mai valori, ticker o chi sei.
+
+## Requisiti
+
+- macOS 15.6 o successivo, iPadOS 18.6 o successivo, o iOS 18.6 o successivo.
+- Accesso a iCloud (opzionale, consigliato per la sincronizzazione tra dispositivi).
+
+## Link
+
+- Homepage (italiano): https://gianfilippocisternino.github.io/macos-holdings-app/it/
+- Homepage (inglese): https://gianfilippocisternino.github.io/macos-holdings-app/
+- Supporto: https://gianfilippocisternino.github.io/macos-holdings-app/support.html
+- Informativa privacy: https://gianfilippocisternino.github.io/macos-holdings-app/privacy.html
+
+## Informazioni
+
+Realizzata da Gianfilippo Cisternino. Holdings è un'app SwiftUI nativa che gira su macOS, iPadOS e iOS da un'unica codebase, pensata per rendere la visibilità sul proprio patrimonio rapida, privata e accurata.

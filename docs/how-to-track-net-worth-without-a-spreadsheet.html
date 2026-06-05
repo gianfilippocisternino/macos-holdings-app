@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Track Your Net Worth Without a Spreadsheet (2026 Guide)</title>
+    <meta name="description" content="A practical guide to tracking your net worth without Excel or Google Sheets — what to track, how to keep values current automatically, how to include real estate, and how to keep it private. No bank login required.">
+    <link rel="canonical" href="https://gianfilippocisternino.github.io/macos-holdings-app/how-to-track-net-worth-without-a-spreadsheet.html">
+    <meta property="og:title" content="How to Track Your Net Worth Without a Spreadsheet">
+    <meta property="og:description" content="What to track, how to keep values current automatically, how to include real estate, and how to stay private — without Excel and without a bank login.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://gianfilippocisternino.github.io/macos-holdings-app/how-to-track-net-worth-without-a-spreadsheet.html">
+    <meta property="og:image" content="https://gianfilippocisternino.github.io/macos-holdings-app/assets/social/og-card.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How to Track Your Net Worth Without a Spreadsheet",
+      "description": "A practical guide to tracking net worth without Excel or Google Sheets: what to track, how to keep values current automatically, how to include real estate, and how to keep it private.",
+      "author": { "@type": "Person", "name": "Gianfilippo Cisternino" },
+      "datePublished": "2026-06-05",
+      "dateModified": "2026-06-05",
+      "mainEntityOfPage": "https://gianfilippocisternino.github.io/macos-holdings-app/how-to-track-net-worth-without-a-spreadsheet.html",
+      "image": "https://gianfilippocisternino.github.io/macos-holdings-app/assets/social/og-card.png"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to track your net worth without a spreadsheet",
+      "step": [
+        { "@type": "HowToStep", "name": "List everything you own and owe", "text": "Write down every asset (cash, investments, real estate, vehicles, pensions) and every debt (mortgages, loans). Net worth is total assets minus total debts." },
+        { "@type": "HowToStep", "name": "Use a dedicated app instead of formulas", "text": "Pick a net-worth app that calculates totals for you, so you never maintain formulas or cells." },
+        { "@type": "HowToStep", "name": "Connect live prices, not manual entries", "text": "Choose a tool that fetches market prices and FX rates automatically for stocks, ETFs, bonds and crypto, so values stay current without copy-paste." },
+        { "@type": "HowToStep", "name": "Add real estate with a real valuation", "text": "Use official property data (such as OMI in Italy or national house-price indexes) instead of guessing a number." },
+        { "@type": "HowToStep", "name": "Review monthly and keep it private", "text": "Record a value each month to see your trend, and prefer a tool that stores data locally or in your private iCloud rather than on a third-party server." }
+      ]
+    }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif; color: #1d1d1f; background: #fff; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+        .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px 32px; }
+        .crumbs { font-size: 14px; color: #6e6e73; margin-bottom: 24px; }
+        .crumbs a { color: #0071e3; text-decoration: none; }
+        h1 { font-size: 38px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.15; }
+        .lead { font-size: 20px; color: #6e6e73; margin-bottom: 32px; }
+        h2 { font-size: 26px; font-weight: 700; margin: 40px 0 14px; letter-spacing: -0.3px; }
+        h3 { font-size: 19px; font-weight: 600; margin: 28px 0 8px; }
+        p { margin-bottom: 16px; font-size: 17px; }
+        ul, ol { margin: 0 0 16px 24px; }
+        li { margin-bottom: 8px; font-size: 17px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #e0e0e0; vertical-align: top; }
+        th { font-weight: 600; }
+        .callout { background: #f5f5f7; border-radius: 16px; padding: 24px 28px; margin: 32px 0; }
+        .callout h3 { margin-top: 0; }
+        .cta { display: inline-block; background: #0071e3; color: #fff; padding: 12px 28px; border-radius: 980px; text-decoration: none; font-size: 16px; font-weight: 500; margin-top: 8px; }
+        footer { text-align: center; padding: 48px 24px; color: #6e6e73; font-size: 14px; border-top: 1px solid #e0e0e0; margin-top: 48px; }
+        footer a { color: #0071e3; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <article class="wrap">
+        <nav class="crumbs"><a href="./">Holdings</a> › How to track net worth without a spreadsheet</nav>
+        <h1>How to track your net worth without a spreadsheet</h1>
+        <p class="lead">Spreadsheets are where most people start tracking their money — and where most people quit. Here's how to track your full net worth without Excel or Google Sheets, keep the numbers current automatically, and still keep everything private.</p>
+
+        <h2>Why a spreadsheet stops working</h2>
+        <p>A net-worth spreadsheet looks simple at first: a column of assets, a column of debts, a total at the bottom. The problems show up over time:</p>
+        <ul>
+            <li><strong>Prices go stale.</strong> Every stock, ETF and crypto needs to be updated by hand. Within a month your total is fiction.</li>
+            <li><strong>Formulas break.</strong> One wrong cell reference or a deleted row and the total is silently wrong.</li>
+            <li><strong>No real-estate value.</strong> A house is usually the biggest asset, and a spreadsheet can only hold the number you typed years ago.</li>
+            <li><strong>No currencies.</strong> Foreign accounts and assets need manual FX conversion every time rates move.</li>
+            <li><strong>No privacy model.</strong> A sheet synced to a generic cloud drive is readable by that provider and anyone with the link.</li>
+        </ul>
+
+        <h2>What "net worth" actually includes</h2>
+        <p>Net worth is everything you own minus everything you owe. To track it properly you want all of it in one place:</p>
+        <ul>
+            <li><strong>Investments</strong> — stocks, ETFs, bonds, mutual funds, crypto.</li>
+            <li><strong>Cash</strong> — checking, savings and term deposits, in any currency.</li>
+            <li><strong>Real estate</strong> — your home and any other property, at a realistic current value.</li>
+            <li><strong>Other assets</strong> — vehicles, private company stakes, pensions and severance.</li>
+            <li><strong>Debts</strong> — mortgages and loans, ideally linked to the asset they finance.</li>
+        </ul>
+
+        <h2>The five steps</h2>
+        <ol>
+            <li><strong>List everything you own and owe.</strong> Start with the big items; you can refine later.</li>
+            <li><strong>Use a dedicated app instead of formulas.</strong> Let the tool compute the total so there's nothing to break.</li>
+            <li><strong>Connect live prices, not manual entries.</strong> Pick something that fetches market prices and FX rates automatically.</li>
+            <li><strong>Add real estate with a real valuation.</strong> Use official data instead of a guess (see below).</li>
+            <li><strong>Review monthly and keep it private.</strong> A monthly snapshot reveals your trend; local or private-iCloud storage keeps it yours.</li>
+        </ol>
+
+        <h2>Spreadsheet vs a dedicated net-worth app</h2>
+        <table>
+            <tr><th>&nbsp;</th><th>Excel / Google Sheets</th><th>Dedicated app (e.g. Holdings)</th></tr>
+            <tr><td>Market prices</td><td>Typed in by hand</td><td>Fetched live, automatically</td></tr>
+            <tr><td>FX conversion</td><td>Manual</td><td>Automatic, at current rates</td></tr>
+            <tr><td>Real-estate value</td><td>A number you guessed</td><td>From official datasets (OMI / HPI)</td></tr>
+            <tr><td>Mortgages</td><td>A separate row</td><td>Linked to the property they finance</td></tr>
+            <tr><td>History &amp; charts</td><td>You build them</td><td>Built in, monthly</td></tr>
+            <tr><td>Privacy</td><td>Readable by your cloud provider</td><td>Stays in your private iCloud</td></tr>
+            <tr><td>Bank login</td><td>None — but no automation either</td><td>None required, yet still automated</td></tr>
+        </table>
+
+        <h2>How to value real estate without guessing</h2>
+        <p>Property is usually the part a spreadsheet handles worst. You can do better without an appraisal:</p>
+        <ul>
+            <li><strong>In Italy</strong>, the Agenzia delle Entrate publishes the <strong>OMI</strong> quotations — market value per square metre by municipality, zone and property type. Multiply by your property's size for a defensible estimate.</li>
+            <li><strong>In the US, Germany and Spain</strong>, national house-price indexes (FRED Case-Shiller, Eurostat) let you project a purchase price forward to today.</li>
+        </ul>
+
+        <h2>Do you need to connect your bank?</h2>
+        <p>No — and you may not want to. Many net-worth apps (Mint, Empower, Monarch) rely on bank aggregation through services like Plaid, which means handing over your banking credentials. A spreadsheet avoids that but gives you no automation. The middle ground is an app that automates <em>market data</em> (prices and FX, which are public) without ever touching your bank.</p>
+
+        <div class="callout">
+            <h3>Holdings does all five steps for you</h3>
+            <p>Holdings is a native Mac, iPad and iPhone app that tracks your full net worth — investments, cash, real estate, vehicles and debts — with live prices, automatic FX, and official OMI/HPI property valuations. No spreadsheet, no bank login, no account. Your data stays in your private iCloud.</p>
+            <a class="cta" href="./">See how Holdings works →</a>
+            <p style="margin:14px 0 0;font-size:14px;"><a href="https://apps.apple.com/us/app/holdings-net-worth-tracker/id6771145916" style="color:#0071e3;text-decoration:none;">Available on iPhone, iPad &amp; Mac on the App Store →</a></p>
+        </div>
+
+        <h2>Frequently asked questions</h2>
+        <h3>Can I track net worth for free without a spreadsheet?</h3>
+        <p>Yes. Holdings tracks unlimited assets across all categories for free, including live prices and the growth dashboard. Only advanced extras (geography breakdown, real-estate valuations, goals, PDF export) are a one-time paid upgrade.</p>
+        <h3>How often should I update my net worth?</h3>
+        <p>Once a month is enough to see a meaningful trend. With an app that fetches prices automatically, "updating" is just opening it.</p>
+        <h3>Is a net-worth app safe if it doesn't connect to my bank?</h3>
+        <p>An app that never asks for bank credentials has nothing to leak. Holdings stores everything in your own iCloud and uses only public market data for prices.</p>
+    </article>
+
+    <footer>
+        <p><a href="./">Home</a> &middot; <a href="support.html">Support</a> &middot; <a href="privacy.html">Privacy Policy</a></p>
+        <p style="margin-top: 8px;">&copy; 2026 Gianfilippo Cisternino</p>
+    </footer>
+</body>
+</html>
