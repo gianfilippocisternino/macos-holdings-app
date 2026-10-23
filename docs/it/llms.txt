@@ -61,8 +61,8 @@ I tuoi dati vivono solo sul tuo dispositivo e nel tuo account iCloud privato —
 
 - Homepage (italiano): https://gianfilippocisternino.github.io/macos-holdings-app/it/
 - Homepage (inglese): https://gianfilippocisternino.github.io/macos-holdings-app/
-- Supporto: https://gianfilippocisternino.github.io/macos-holdings-app/support.html
-- Informativa privacy: https://gianfilippocisternino.github.io/macos-holdings-app/privacy.html
+- Supporto: https://gianfilippocisternino.github.io/macos-holdings-app/it/supporto.html
+- Informativa privacy: https://gianfilippocisternino.github.io/macos-holdings-app/it/privacy.html
 - Guida — Monitorare il patrimonio netto senza Excel: https://gianfilippocisternino.github.io/macos-holdings-app/it/come-monitorare-il-patrimonio-netto-senza-excel.html
 - Guida — Migliore app privata per il patrimonio netto su Mac: https://gianfilippocisternino.github.io/macos-holdings-app/it/migliore-app-patrimonio-netto-privata-per-mac.html
 

@@ -22,7 +22,7 @@
     <meta property="og:description" content="Tieni traccia di tutto il tuo patrimonio senza Excel — prezzi di mercato in tempo reale, valutazioni immobiliari OMI ufficiali, mutui collegati agli immobili. Senza accesso alla banca, senza account. I tuoi dati non lasciano mai il tuo iCloud.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gianfilippocisternino.github.io/macos-holdings-app/it/">
-    <meta property="og:image" content="https://gianfilippocisternino.github.io/macos-holdings-app/assets/social/og-card.png">
+    <meta property="og:image" content="https://gianfilippocisternino.github.io/macos-holdings-app/assets/social/og-card-2.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="it">
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Holdings — Traccia il patrimonio netto senza Excel (Mac e iPhone)">
     <meta name="twitter:description" content="Tieni traccia di tutto il tuo patrimonio senza Excel — prezzi in tempo reale, valutazioni OMI ufficiali, senza accesso alla banca. I tuoi dati non lasciano mai il tuo iCloud.">
-    <meta name="twitter:image" content="https://gianfilippocisternino.github.io/macos-holdings-app/assets/social/og-card.png">
+    <meta name="twitter:image" content="https://gianfilippocisternino.github.io/macos-holdings-app/assets/social/og-card-2.png">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -66,8 +66,11 @@
       ],
       "author": {
         "@type": "Person",
-        "name": "Gianfilippo Cisternino"
+        "@id": "https://gianfilippocisternino.github.io/macos-holdings-app/#author",
+        "name": "Gianfilippo Cisternino",
+        "url": "https://gianfilippocisternino.github.io/macos-holdings-app/it/#about"
       },
+      "sameAs": ["https://apps.apple.com/us/app/holdings-net-worth-tracker/id6771145916"],
       "featureList": [
         "Traccia l'intero patrimonio netto senza foglio di calcolo — niente Excel, niente formule manuali",
         "Nessun accesso alla banca — niente è collegato ai tuoi conti correnti",
@@ -444,7 +447,54 @@
             .pricing .plans { flex-direction: column; align-items: center; }
             .hero .cta { display: block; max-width: 280px; margin: 12px auto; }
         }
+        .built {
+            text-align: center;
+            background: #f5f5f7;
+            border-radius: 20px;
+            padding: 48px 32px;
+            margin: 0 auto;
+            max-width: 720px;
+        }
+        .built h2 { margin-bottom: 16px; }
+        .built p + p { margin-top: 14px; }
+        .built a { color: #0071e3; text-decoration: none; }
+        .built p {
+            font-size: 17px;
+            color: #6e6e73;
+            max-width: 560px;
+            margin: 0 auto;
+        }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://gianfilippocisternino.github.io/macos-holdings-app/#website",
+          "url": "https://gianfilippocisternino.github.io/macos-holdings-app/",
+          "name": "Holdings",
+          "inLanguage": [
+            "en",
+            "it"
+          ],
+          "publisher": {
+            "@id": "https://gianfilippocisternino.github.io/macos-holdings-app/#author"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://gianfilippocisternino.github.io/macos-holdings-app/#author",
+          "name": "Gianfilippo Cisternino",
+          "url": "https://gianfilippocisternino.github.io/macos-holdings-app/it/#about",
+          "jobTitle": "Sviluppatore indipendente",
+          "sameAs": [
+            "https://github.com/gianfilippocisternino"
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header class="hero">
@@ -620,6 +670,14 @@
         </div>
     </section>
 
+    <section id="about">
+        <div class="built">
+            <h2>Chi c'è dietro Holdings</h2>
+            <p>Holdings è progettata e sviluppata da Gianfilippo Cisternino, sviluppatore indipendente. È un'app nativa SwiftUI, un'unica codebase per Mac, iPad e iPhone, senza backend: i tuoi dati non arrivano mai su un mio server, perché non esiste.</p>
+            <p>Anche il modello di business è semplice: un acquisto singolo per Pro. Niente pubblicità, niente abbonamenti, nessuna vendita di dati. Domande, bug e idee arrivano direttamente a me: <a href="mailto:gianfilippo.cisternino@gmail.com">gianfilippo.cisternino@gmail.com</a> &middot; <a href="https://github.com/gianfilippocisternino">GitHub</a></p>
+        </div>
+    </section>
+
     <section>
         <h2>Domande frequenti</h2>
         <div class="features" style="grid-template-columns: 1fr;">
@@ -710,8 +768,8 @@
     </main>
 
     <nav style="text-align: center; padding: 24px;">
-        <a href="https://gianfilippocisternino.github.io/macos-holdings-app/support.html" style="color: #0071e3; text-decoration: none; margin: 0 12px;">Supporto e FAQ</a>
-        <a href="https://gianfilippocisternino.github.io/macos-holdings-app/privacy.html" style="color: #0071e3; text-decoration: none; margin: 0 12px;">Informativa privacy</a>
+        <a href="https://gianfilippocisternino.github.io/macos-holdings-app/it/supporto.html" style="color: #0071e3; text-decoration: none; margin: 0 12px;">Supporto e FAQ</a>
+        <a href="https://gianfilippocisternino.github.io/macos-holdings-app/it/privacy.html" style="color: #0071e3; text-decoration: none; margin: 0 12px;">Informativa privacy</a>
     </nav>
 
     <footer>
@@ -719,7 +777,7 @@
             <a href="come-monitorare-il-patrimonio-netto-senza-excel.html">Patrimonio netto senza Excel</a> &middot;
             <a href="migliore-app-patrimonio-netto-privata-per-mac.html">Migliore app privata per il patrimonio netto su Mac</a>
         </p>
-        <p><a href="https://gianfilippocisternino.github.io/macos-holdings-app/support.html">Supporto</a> &middot; <a href="https://gianfilippocisternino.github.io/macos-holdings-app/privacy.html">Informativa privacy</a> &middot; <a href="../">English</a></p>
+        <p><a href="https://gianfilippocisternino.github.io/macos-holdings-app/it/supporto.html">Supporto</a> &middot; <a href="https://gianfilippocisternino.github.io/macos-holdings-app/it/privacy.html">Informativa privacy</a> &middot; <a href="../">English</a></p>
         <p style="margin-top: 8px;">&copy; 2026 Gianfilippo Cisternino</p>
     </footer>
     <script>

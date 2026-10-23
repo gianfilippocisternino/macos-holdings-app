@@ -22,7 +22,7 @@
     <meta property="og:description" content="Track your full net worth without a spreadsheet — live market prices, official real-estate valuations, mortgages linked to properties. No bank login, no accounts. Your data never leaves your iCloud.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gianfilippocisternino.github.io/macos-holdings-app/">
-    <meta property="og:image" content="https://gianfilippocisternino.github.io/macos-holdings-app/assets/social/og-card.png">
+    <meta property="og:image" content="https://gianfilippocisternino.github.io/macos-holdings-app/assets/social/og-card-2.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="en">
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Holdings — Net-Worth Tracker for Mac &amp; iPhone (No Spreadsheet)">
     <meta name="twitter:description" content="Track your full net worth without a spreadsheet — live prices, official real-estate valuations, no bank login. Your data never leaves your iCloud.">
-    <meta name="twitter:image" content="https://gianfilippocisternino.github.io/macos-holdings-app/assets/social/og-card.png">
+    <meta name="twitter:image" content="https://gianfilippocisternino.github.io/macos-holdings-app/assets/social/og-card-2.png">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -65,8 +65,11 @@
       ],
       "author": {
         "@type": "Person",
-        "name": "Gianfilippo Cisternino"
+        "@id": "https://gianfilippocisternino.github.io/macos-holdings-app/#author",
+        "name": "Gianfilippo Cisternino",
+        "url": "https://gianfilippocisternino.github.io/macos-holdings-app/#about"
       },
+      "sameAs": ["https://apps.apple.com/us/app/holdings-net-worth-tracker/id6771145916"],
       "featureList": [
         "Track your full net worth without a spreadsheet — no Excel, no manual formulas",
         "No bank login required — nothing is linked to your bank accounts",
@@ -286,6 +289,8 @@
             max-width: 720px;
         }
         .built h2 { margin-bottom: 16px; }
+        .built p + p { margin-top: 14px; }
+        .built a { color: #0071e3; text-decoration: none; }
         .built p {
             font-size: 17px;
             color: #6e6e73;
@@ -460,6 +465,36 @@
             .hero .cta { display: block; max-width: 280px; margin: 12px auto; }
         }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://gianfilippocisternino.github.io/macos-holdings-app/#website",
+          "url": "https://gianfilippocisternino.github.io/macos-holdings-app/",
+          "name": "Holdings",
+          "inLanguage": [
+            "en",
+            "it"
+          ],
+          "publisher": {
+            "@id": "https://gianfilippocisternino.github.io/macos-holdings-app/#author"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://gianfilippocisternino.github.io/macos-holdings-app/#author",
+          "name": "Gianfilippo Cisternino",
+          "url": "https://gianfilippocisternino.github.io/macos-holdings-app/#about",
+          "jobTitle": "Independent developer",
+          "sameAs": [
+            "https://github.com/gianfilippocisternino"
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header class="hero">
@@ -632,6 +667,14 @@
                 <li>Holdings fetches live prices, FX rates and property valuations automatically</li>
                 <li>See your full net worth in one view, synced privately across your Apple devices</li>
             </ol>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="built">
+            <h2>Who makes Holdings</h2>
+            <p>Holdings is designed and built by Gianfilippo Cisternino, an independent developer. It's a native SwiftUI app, one codebase for Mac, iPad and iPhone, with no backend: your data never reaches a server of mine, because there isn't one.</p>
+            <p>The business model is just as simple: a one-time Pro purchase. No ads, no subscriptions, no data sales. Questions, bugs and ideas reach me directly at <a href="mailto:gianfilippo.cisternino@gmail.com">gianfilippo.cisternino@gmail.com</a> &middot; <a href="https://github.com/gianfilippocisternino">GitHub</a></p>
         </div>
     </section>
 

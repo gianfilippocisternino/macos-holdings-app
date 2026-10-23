@@ -33,4 +33,4 @@ Keep new files under ~300 KB each.
 
 ## Social card (separate folder)
 
-`../social/og-card.png` — **1200×630** Open Graph / Twitter card for link previews.
+`../social/og-card-2.png` — **1200×630** Open Graph / Twitter card for link previews (the 1.2 design: dark glow background, iPhone Duo + iPhone). Give a new design a new file name, since social networks cache previews by URL.
