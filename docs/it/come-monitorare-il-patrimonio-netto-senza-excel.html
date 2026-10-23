@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Come monitorare il patrimonio netto senza Excel (Guida 2026)</title>
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/favicon-180.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <meta name="description" content="Come monitorare il patrimonio netto senza Excel o Google Fogli: cosa includere, valori sempre aggiornati, immobili valutati con dati OMI e privacy.">
+    <link rel="canonical" href="https://gianfilippocisternino.github.io/macos-holdings-app/it/come-monitorare-il-patrimonio-netto-senza-excel.html">
+    <link rel="alternate" hreflang="it" href="https://gianfilippocisternino.github.io/macos-holdings-app/it/come-monitorare-il-patrimonio-netto-senza-excel.html">
+    <link rel="alternate" hreflang="en" href="https://gianfilippocisternino.github.io/macos-holdings-app/how-to-track-net-worth-without-a-spreadsheet.html">
+    <link rel="alternate" hreflang="x-default" href="https://gianfilippocisternino.github.io/macos-holdings-app/how-to-track-net-worth-without-a-spreadsheet.html">
+    <meta property="og:title" content="Come monitorare il patrimonio netto senza Excel">
+    <meta property="og:description" content="Cosa monitorare, come tenere i valori aggiornati in automatico, come includere gli immobili e come restare privati, senza Excel e senza accesso alla banca.">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:url" content="https://gianfilippocisternino.github.io/macos-holdings-app/it/come-monitorare-il-patrimonio-netto-senza-excel.html">
+    <meta property="og:image" content="https://gianfilippocisternino.github.io/macos-holdings-app/assets/social/og-card.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Come monitorare il patrimonio netto senza Excel",
+      "description": "Una guida pratica per monitorare il patrimonio netto senza Excel o Google Fogli: cosa includere, come tenere i valori aggiornati in automatico, come valutare gli immobili e come mantenere tutto privato.",
+      "inLanguage": "it",
+      "author": { "@type": "Person", "name": "Gianfilippo Cisternino" },
+      "datePublished": "2026-10-23",
+      "dateModified": "2026-10-23",
+      "mainEntityOfPage": "https://gianfilippocisternino.github.io/macos-holdings-app/it/come-monitorare-il-patrimonio-netto-senza-excel.html",
+      "image": "https://gianfilippocisternino.github.io/macos-holdings-app/assets/social/og-card.png"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Come monitorare il patrimonio netto senza Excel",
+      "inLanguage": "it",
+      "step": [
+        { "@type": "HowToStep", "name": "Elenca tutto ciò che possiedi e che devi", "text": "Annota ogni bene (liquidità, investimenti, immobili, veicoli, previdenza) e ogni debito (mutui, prestiti). Il patrimonio netto è il totale dei beni meno il totale dei debiti." },
+        { "@type": "HowToStep", "name": "Usa un'app dedicata invece delle formule", "text": "Scegli un'app per il patrimonio netto che calcoli i totali al posto tuo, così non devi più mantenere formule o celle." },
+        { "@type": "HowToStep", "name": "Collega prezzi in tempo reale, non valori inseriti a mano", "text": "Scegli uno strumento che scarichi in automatico prezzi di mercato e cambi per azioni, ETF, obbligazioni e crypto, così i valori restano aggiornati senza copia e incolla." },
+        { "@type": "HowToStep", "name": "Aggiungi gli immobili con una valutazione reale", "text": "Usa dati immobiliari ufficiali (come le quotazioni OMI in Italia o gli indici nazionali dei prezzi delle case) invece di tirare a indovinare." },
+        { "@type": "HowToStep", "name": "Controlla ogni mese e mantieni tutto privato", "text": "Registra un valore ogni mese per vedere l'andamento e preferisci uno strumento che conservi i dati sul dispositivo o nel tuo iCloud privato, non sul server di terzi." }
+      ]
+    }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif; color: #1d1d1f; background: #fff; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+        .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px 32px; }
+        .crumbs { font-size: 14px; color: #6e6e73; margin-bottom: 24px; }
+        .crumbs a { color: #0071e3; text-decoration: none; }
+        h1 { font-size: 38px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.15; }
+        .lead { font-size: 20px; color: #6e6e73; margin-bottom: 32px; }
+        h2 { font-size: 26px; font-weight: 700; margin: 40px 0 14px; letter-spacing: -0.3px; }
+        h3 { font-size: 19px; font-weight: 600; margin: 28px 0 8px; }
+        p { margin-bottom: 16px; font-size: 17px; }
+        ul, ol { margin: 0 0 16px 24px; }
+        li { margin-bottom: 8px; font-size: 17px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 15px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #e0e0e0; vertical-align: top; }
+        th { font-weight: 600; }
+        .callout { background: #f5f5f7; border-radius: 16px; padding: 24px 28px; margin: 32px 0; }
+        .callout h3 { margin-top: 0; }
+        .cta { display: inline-block; background: #0071e3; color: #fff; padding: 12px 28px; border-radius: 980px; text-decoration: none; font-size: 16px; font-weight: 500; margin-top: 8px; }
+        footer { text-align: center; padding: 48px 24px; color: #6e6e73; font-size: 14px; border-top: 1px solid #e0e0e0; margin-top: 48px; }
+        footer a { color: #0071e3; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <article class="wrap">
+        <nav class="crumbs"><a href="./">Holdings</a> › Patrimonio netto senza Excel</nav>
+        <h1>Come monitorare il patrimonio netto senza Excel</h1>
+        <p class="lead">Il foglio di calcolo è il punto da cui quasi tutti partono per tenere traccia dei propri soldi, e anche quello in cui quasi tutti mollano. Ecco come monitorare tutto il tuo patrimonio netto senza Excel o Google Fogli, con valori sempre aggiornati in automatico e senza rinunciare alla privacy.</p>
+
+        <h2>Perché il foglio di calcolo smette di funzionare</h2>
+        <p>Un foglio per il patrimonio netto all'inizio sembra semplice: una colonna di beni, una di debiti, un totale in fondo. I problemi arrivano col tempo:</p>
+        <ul>
+            <li><strong>I prezzi invecchiano.</strong> Ogni azione, ETF e crypto va aggiornata a mano. Dopo un mese il totale non corrisponde più alla realtà.</li>
+            <li><strong>Le formule si rompono.</strong> Basta un riferimento sbagliato o una riga cancellata e il totale diventa errato senza che te ne accorga.</li>
+            <li><strong>Nessun valore per la casa.</strong> L'immobile è di solito il bene più importante, e il foglio può contenere solo il numero che hai scritto anni fa.</li>
+            <li><strong>Nessuna gestione delle valute.</strong> Conti e investimenti in valuta estera vanno convertiti a mano ogni volta che il cambio si muove.</li>
+            <li><strong>Nessuna tutela della privacy.</strong> Un foglio sincronizzato su un cloud generico è leggibile dal fornitore e da chiunque abbia il link.</li>
+        </ul>
+
+        <h2>Cosa comprende davvero il patrimonio netto</h2>
+        <p>Il patrimonio netto è tutto ciò che possiedi meno tutto ciò che devi. Per monitorarlo bene ti serve tutto in un unico posto:</p>
+        <ul>
+            <li><strong>Investimenti</strong>: azioni, ETF, obbligazioni, fondi comuni, crypto.</li>
+            <li><strong>Liquidità</strong>: conti correnti, conti deposito e vincolati, in qualsiasi valuta.</li>
+            <li><strong>Immobili</strong>: la casa e ogni altra proprietà, a un valore attuale realistico.</li>
+            <li><strong>Altri beni</strong>: veicoli, quote di società private, previdenza e TFR.</li>
+            <li><strong>Debiti</strong>: mutui e prestiti, idealmente collegati al bene che finanziano.</li>
+        </ul>
+
+        <h2>I cinque passaggi</h2>
+        <ol>
+            <li><strong>Elenca tutto ciò che possiedi e che devi.</strong> Parti dalle voci più grandi; potrai rifinire dopo.</li>
+            <li><strong>Usa un'app dedicata invece delle formule.</strong> Lascia che sia lo strumento a calcolare il totale, così non c'è niente che si possa rompere.</li>
+            <li><strong>Collega prezzi in tempo reale, non valori inseriti a mano.</strong> Scegli qualcosa che scarichi in automatico prezzi di mercato e cambi.</li>
+            <li><strong>Aggiungi gli immobili con una valutazione reale.</strong> Usa dati ufficiali invece di una stima a occhio (vedi sotto).</li>
+            <li><strong>Controlla ogni mese e mantieni tutto privato.</strong> Una fotografia mensile mostra l'andamento; tenere i dati sul dispositivo o nel tuo iCloud privato li lascia solo a te.</li>
+        </ol>
+
+        <h2>Foglio di calcolo o app dedicata al patrimonio netto</h2>
+        <table>
+            <tr><th>&nbsp;</th><th>Excel / Google Fogli</th><th>App dedicata (es. Holdings)</th></tr>
+            <tr><td>Prezzi di mercato</td><td>Inseriti a mano</td><td>Scaricati in tempo reale, in automatico</td></tr>
+            <tr><td>Conversione valute</td><td>Manuale</td><td>Automatica, ai cambi correnti</td></tr>
+            <tr><td>Valore degli immobili</td><td>Un numero stimato a occhio</td><td>Da dati ufficiali (OMI / HPI)</td></tr>
+            <tr><td>Mutui</td><td>Una riga a parte</td><td>Collegati all'immobile che finanziano</td></tr>
+            <tr><td>Storico e grafici</td><td>Da costruire da te</td><td>Già pronti, mese per mese</td></tr>
+            <tr><td>Privacy</td><td>Leggibile dal fornitore del cloud</td><td>Resta nel tuo iCloud privato</td></tr>
+            <tr><td>Accesso alla banca</td><td>Nessuno, ma nemmeno automazione</td><td>Nessuno, eppure automatizzata</td></tr>
+        </table>
+
+        <h2>Come valutare gli immobili senza tirare a indovinare</h2>
+        <p>Gli immobili sono di solito la parte che il foglio di calcolo gestisce peggio. Puoi fare di meglio anche senza una perizia:</p>
+        <ul>
+            <li><strong>In Italia</strong> l'Agenzia delle Entrate pubblica le quotazioni <strong>OMI</strong> (Osservatorio del Mercato Immobiliare): il valore di mercato al metro quadro per comune, zona e tipologia. Moltiplicato per la superficie del tuo immobile, dà una stima solida e documentabile.</li>
+            <li><strong>Negli Stati Uniti, in Germania e in Spagna</strong> gli indici nazionali dei prezzi delle case (FRED Case-Shiller, Eurostat) permettono di riportare a oggi il prezzo d'acquisto.</li>
+        </ul>
+
+        <h2>Serve collegare il conto in banca?</h2>
+        <p>No, e potresti non volerlo fare. Molte app per il patrimonio netto (Mint, Empower, Monarch) si basano sull'aggregazione bancaria tramite servizi come Plaid, il che significa consegnare le credenziali della banca. Un foglio di calcolo lo evita ma non automatizza niente. La via di mezzo è un'app che automatizza i <em>dati di mercato</em> (prezzi e cambi, che sono pubblici) senza mai toccare la tua banca.</p>
+
+        <div class="callout">
+            <h3>Holdings fa tutti e cinque i passaggi al posto tuo</h3>
+            <p>Holdings è un'app nativa per Mac, iPad e iPhone che monitora tutto il tuo patrimonio netto (investimenti, liquidità, immobili, veicoli e debiti) con prezzi in tempo reale, cambi automatici e valutazioni immobiliari ufficiali OMI/HPI. Niente Excel, niente accesso alla banca, niente account. I tuoi dati restano nel tuo iCloud privato.</p>
+            <a class="cta" href="./">Scopri come funziona Holdings →</a>
+            <p style="margin:14px 0 0;font-size:14px;"><a href="https://apps.apple.com/it/app/holdings-net-worth-tracker/id6771145916" style="color:#0071e3;text-decoration:none;">Disponibile su iPhone, iPad e Mac nell'App Store →</a></p>
+        </div>
+
+        <h2>Domande frequenti</h2>
+        <h3>Posso monitorare il patrimonio netto gratis senza Excel?</h3>
+        <p>Sì. Holdings monitora gratis asset illimitati in tutte le categorie, inclusi prezzi in tempo reale e dashboard di crescita. Solo le funzioni avanzate (ripartizione geografica e per società e settori, valutazioni immobiliari, report PDF, importazione/esportazione CSV) sono un acquisto singolo.</p>
+        <h3>Ogni quanto dovrei aggiornare il patrimonio netto?</h3>
+        <p>Una volta al mese basta per vedere un andamento significativo. Con un'app che scarica i prezzi da sola, "aggiornare" vuol dire semplicemente aprirla.</p>
+        <h3>Un'app per il patrimonio netto è sicura se non si collega alla banca?</h3>
+        <p>Un'app che non chiede mai le credenziali della banca non ha niente da far trapelare. Holdings conserva tutto nel tuo iCloud e usa solo dati di mercato pubblici per i prezzi.</p>
+    </article>
+
+    <footer>
+        <p><a href="./">Home</a> &middot; <a href="../support.html">Supporto</a> &middot; <a href="../privacy.html">Informativa privacy</a> &middot; <a href="../how-to-track-net-worth-without-a-spreadsheet.html" hreflang="en">English</a></p>
+        <p style="margin-top: 8px;">&copy; 2026 Gianfilippo Cisternino</p>
+    </footer>
+    <script src="../assets/analytics.js" defer></script>
+</body>
+</html>
