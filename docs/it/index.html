@@ -389,7 +389,7 @@
         /* ---- iPad + iPhone (overlapping, in front of the Mac) ---- */
         .device-row { display: flex; align-items: flex-end; justify-content: center; gap: 0; margin-top: -40px; position: relative; z-index: 3; }
         /* iPad */
-        .device-ipad { flex: 0 0 auto; width: 360px; max-width: 360px; position: relative; z-index: 1; }
+        .device-ipad { flex: 0 0 auto; width: 330px; max-width: 330px; position: relative; z-index: 1; }
         .ipad-body {
             position: relative;
             background: #0b0c0e;
@@ -398,7 +398,7 @@
             box-shadow: inset 0 0 0 2px #2f3136, 0 0 0 1px #050506, 0 30px 56px rgba(0,0,0,0.45);
         }
         .ipad-body .cam { position: absolute; top: 5px; left: 50%; transform: translateX(-50%); width: 5px; height: 5px; border-radius: 50%; background: #1a1b1f; z-index: 2; }
-        .ipad-body .screen { position: relative; aspect-ratio: 4 / 3; border-radius: 9px; overflow: hidden; background: #000; }
+        .ipad-body .screen { position: relative; aspect-ratio: 3 / 4; border-radius: 9px; overflow: hidden; background: #000; }
         .ipad-body .screen .shot { object-fit: cover; }
         /* iPhone */
         .device-iphone { flex: 0 0 auto; width: 206px; max-width: 206px; margin-left: -54px; position: relative; z-index: 2; }
@@ -416,7 +416,7 @@
         @media (max-width: 760px) {
             .stage { padding: 34px 16px 44px; border-radius: 20px; }
             .device-row { flex-direction: column; align-items: center; gap: 40px; margin-top: 34px; }
-            .device-ipad, .device-iphone { width: 100%; max-width: 340px; margin-left: 0; }
+            .device-ipad, .device-iphone { width: 100%; max-width: 300px; margin-left: 0; }
             .device-iphone { max-width: 210px; }
         }
         footer {
@@ -489,7 +489,7 @@
                         <img class="shot" src="../assets/screenshots/mac-2.webp" alt="Vista mensile di Holdings su Mac" loading="lazy">
                         <img class="shot" src="../assets/screenshots/mac-3.webp" alt="Composizione di un asset in Holdings su Mac" loading="lazy">
                         <img class="shot" src="../assets/screenshots/mac-4.webp" alt="Dashboard di Holdings su Mac" loading="lazy">
-                        <img class="shot" src="../assets/screenshots/mac-5.webp" alt="Ripartizione mensile di Holdings su Mac" loading="lazy">
+                        <img class="shot" src="../assets/screenshots/mac-5.webp" alt="Elenco asset di Holdings su Mac" loading="lazy">
                     </div>
                 </div>
                 <div class="deck"></div>
