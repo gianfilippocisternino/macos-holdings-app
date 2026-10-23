@@ -26,6 +26,7 @@ I tuoi dati vivono solo sul tuo dispositivo e nel tuo account iCloud privato —
 - **Storico mensile**: ogni asset registra un valore al mese; grafico del patrimonio, ripartizioni per categoria, composizione geografica e settoriale.
 - **Sincronizzazione iCloud CloudKit**: i dati vivono nel tuo container iCloud privato, sincronizzati tra i tuoi dispositivi Apple.
 - **Blocco biometrico**: protezione opzionale con Face ID / Touch ID.
+- **iPhone Duo**: da aperto la dashboard mostra patrimonio, allocazione e analisi fianco a fianco; il layout resta stabile quando pieghi o ruoti il dispositivo.
 
 ## Come funziona
 
@@ -37,7 +38,7 @@ I tuoi dati vivono solo sul tuo dispositivo e nel tuo account iCloud privato —
 ## Prezzi
 
 - **Gratis**: traccia asset illimitati in tutte le categorie. Prezzi live, conversione FX, dashboard di crescita, storico mensile. Nessun account, nessuna carta di credito.
-- **Holdings Pro**: acquisto singolo da 19,99 €. Sblocca ripartizione geografica, valutazioni immobiliari, obiettivi di patrimonio ed esportazione PDF. In condivisione con la famiglia.
+- **Holdings Pro**: acquisto singolo da 19,99 €. Sblocca ripartizione geografica e per società e settori, valutazioni immobiliari, report PDF e importazione/esportazione CSV. In condivisione con la famiglia.
 
 ## Domande frequenti
 

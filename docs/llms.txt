@@ -26,6 +26,7 @@ Your data lives only on your device and in your private iCloud account — there
 - **Monthly history**: each asset records a value per month; net-worth chart, category breakdowns, geography and sector composition.
 - **iCloud CloudKit sync**: data lives in your private iCloud container, syncs across all your Apple devices.
 - **Biometric lock**: optional Face ID / Touch ID gate.
+- **iPhone Duo**: when unfolded, the dashboard shows net worth, allocation and insights side by side; the layout stays steady as you fold and rotate the device.
 
 ## How It Works
 
@@ -37,7 +38,7 @@ Your data lives only on your device and in your private iCloud account — there
 ## Pricing
 
 - **Free**: Track unlimited assets across all categories. Live prices, FX conversion, growth dashboard, monthly history. No account, no credit card.
-- **Holdings Pro**: $19.99 one-time purchase. Unlocks geography breakdown, real-estate valuations, net-worth goals, and PDF export. Family Sharing supported.
+- **Holdings Pro**: $19.99 one-time purchase. Unlocks geography and company/sector breakdowns, real-estate valuations, PDF reports and CSV import/export. Family Sharing supported.
 
 ## Privacy
 
