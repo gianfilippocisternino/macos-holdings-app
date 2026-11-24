@@ -81,6 +81,7 @@
         "Totali multivaluta con conversione FX automatica",
         "13 categorie di asset, inclusi veicoli, quote societarie e previdenza",
         "Storico mensile con grafici e ripartizioni per categoria",
+        "Analisi AI facoltativa dell'intero portafoglio: punteggio di rischio, concentrazioni, diversificazione e spunti, da un riepilogo anonimo preparato sul tuo dispositivo",
         "Sincronizzazione iCloud privata tra Mac, iPad e iPhone — nessun server, nessun account",
         "Pensata per iPhone Duo: dashboard ampia da aperto, stabile quando lo pieghi e lo ruoti"
       ],
@@ -191,6 +192,18 @@
             color: #424245;
             line-height: 1.55;
         }
+        .advisor { max-width: 980px; }
+        .advisor-grid { display: flex; gap: 48px; align-items: center; margin-top: 24px; }
+        .advisor-text { flex: 1; }
+        .advisor-text .lead { margin-bottom: 20px; }
+        .advisor-list { list-style: none; padding: 0; margin: 0 0 20px; }
+        .advisor-list li { font-size: 15px; color: #424245; line-height: 1.55; padding: 10px 0 10px 28px; position: relative; border-top: 1px solid #e8e8ed; }
+        .advisor-list li::before { content: "✦"; position: absolute; left: 0; top: 10px; color: #8e4ec6; }
+        .advisor-list strong { color: #1d1d1f; }
+        .advisor-note { font-size: 13px; color: #6e6e73; line-height: 1.5; }
+        .advisor-shot { flex: 0 0 280px; }
+        .advisor-shot img { width: 100%; height: auto; display: block; border-radius: 28px; box-shadow: 0 12px 40px rgba(0,0,0,.18); }
+        @media (max-width: 720px) { .advisor-grid { flex-direction: column; } .advisor-shot { flex-basis: auto; max-width: 260px; } }
         .features {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -578,6 +591,27 @@
         <p class="shot-captions">Dashboard del patrimonio su Mac · Ogni conto, investimento, immobile e debito su iPad · Il tuo portafoglio su iPhone — tutto sincronizzato in privato tramite iCloud.</p>
     </section>
 
+    <section class="advisor" id="ai-analysis">
+        <p class="eyebrow">Analisi AI</p>
+        <h2>Un secondo parere su tutto il tuo portafoglio.</h2>
+        <div class="advisor-grid">
+            <div class="advisor-text">
+                <p class="lead">Tocca <em>Analizza i tuoi dati</em> e Holdings trasforma il tuo patrimonio in un report chiaro: un punteggio di rischio su 100, le concentrazioni da tenere d'occhio, cosa va bene, la diversificazione tra classi di attività e spunti da valutare — scritto per la tua età, il tuo orizzonte e la tua tolleranza al rischio.</p>
+                <ul class="advisor-list">
+                    <li><strong>Costruita sui tuoi numeri.</strong> Debiti, valute, ripartizioni geografiche e settoriali, storico mensile e il breve profilo che compili vengono tutti considerati.</li>
+                    <li><strong>Dati anonimi, preparati sul tuo dispositivo.</strong> Nomi, ticker, istituti, note e indirizzi non vengono mai inviati: ogni posizione parte con un codice anonimo.</li>
+                    <li><strong>Niente di leggibile conservato sul server.</strong> Il risultato attende lì cifrato finché il dispositivo lo scarica (cancellato dopo 5 minuti, al massimo 24 ore). Le tue analisi restano salvate solo sul tuo dispositivo.</li>
+                    <li><strong>Richieste verificate.</strong> App Attest di Apple controlla che le richieste arrivino da una copia autentica di Holdings, senza account né registrazione.</li>
+                    <li><strong>Esporta e storico.</strong> Conserva ogni report sui tuoi dispositivi, confrontali nel tempo, esportali in PDF.</li>
+                </ul>
+                <p class="advisor-note">Facoltativa e separata da Pro: si paga a consumo (abbonamento o pacchetti di analisi, tramite App Store) e tutto il resto di Holdings funziona senza. I dati partono solo quando avvii un'analisi, dopo aver accettato l'avviso, e vengono inoltrati ad Anthropic, che esegue l'IA. Solo a scopo informativo, non è consulenza finanziaria.</p>
+            </div>
+            <div class="advisor-shot">
+                <img src="../assets/screenshots/advisor-iphone-it.webp" alt="Analisi AI in Holdings su iPhone: punteggio di rischio 64 su 100 con un report di esempio" width="520" height="1131" loading="lazy">
+            </div>
+        </div>
+    </section>
+
     <section>
         <h2>Cosa monitora Holdings</h2>
         <div class="features">
@@ -620,7 +654,7 @@
         <div class="privacy-block">
             <p class="eyebrow">Privacy</p>
             <h2>Privato per scelta — e per architettura.</h2>
-            <p class="lead">Non esiste un account Holdings. Non esiste un backend Holdings. Il tuo patrimonio vive dentro l'iCloud crittografato del tuo Apple ID, dove solo tu e i tuoi dispositivi potete leggerlo. Non possiamo vedere i tuoi dati, perché non li abbiamo.</p>
+            <p class="lead">Non esiste un account Holdings. Non esiste un backend Holdings. Il tuo patrimonio vive dentro l'iCloud crittografato del tuo Apple ID, dove solo tu e i tuoi dispositivi potete leggerlo. Non possiamo vedere i tuoi dati, perché non li abbiamo. Unica eccezione: l'analisi AI facoltativa, che invia un riepilogo anonimo solo quando la richiedi (vedi sopra).</p>
             <div class="privacy-grid">
                 <div class="privacy-claim">
                     <h3>Il tuo iCloud, i tuoi dati</h3>
@@ -655,6 +689,11 @@
                 <p class="price">19,99 € · acquisto singolo<br>In condivisione con la famiglia</p>
                 <p>Sblocca ripartizione geografica e per società e settori, valutazioni immobiliari, report PDF e importazione/esportazione CSV. Nessun abbonamento, mai.</p>
             </div>
+            <div class="plan free">
+                <h3>Analisi AI</h3>
+                <p class="price">Facoltativa · a consumo</p>
+                <p>Un abbonamento o pacchetti di analisi tramite App Store, separati da Pro. I prezzi sono mostrati nell'app prima dell'acquisto.</p>
+            </div>
         </div>
     </section>
 
@@ -673,8 +712,8 @@
     <section id="about">
         <div class="built">
             <h2>Chi c'è dietro Holdings</h2>
-            <p>Holdings è progettata e sviluppata da Gianfilippo Cisternino, sviluppatore indipendente. È un'app nativa SwiftUI, un'unica codebase per Mac, iPad e iPhone, senza backend: i tuoi dati non arrivano mai su un mio server, perché non esiste.</p>
-            <p>Anche il modello di business è semplice: un acquisto singolo per Pro. Niente pubblicità, niente abbonamenti, nessuna vendita di dati. Domande, bug e idee arrivano direttamente a me: <a href="mailto:gianfilippo.cisternino@gmail.com">gianfilippo.cisternino@gmail.com</a> &middot; <a href="https://github.com/gianfilippocisternino">GitHub</a></p>
+            <p>Holdings è progettata e sviluppata da Gianfilippo Cisternino, sviluppatore indipendente. È un'app nativa SwiftUI, un'unica codebase per Mac, iPad e iPhone, senza backend per il tuo portafoglio: i tuoi dati non arrivano mai su un mio server, salvo il riepilogo anonimo dell'analisi AI facoltativa, che avvii tu.</p>
+            <p>Anche il modello di business è semplice: un acquisto singolo per Pro, più l'analisi AI facoltativa a consumo. Niente pubblicità, nessuna vendita di dati. Domande, bug e idee arrivano direttamente a me: <a href="mailto:gianfilippo.cisternino@gmail.com">gianfilippo.cisternino@gmail.com</a> &middot; <a href="https://github.com/gianfilippocisternino">GitHub</a></p>
         </div>
     </section>
 
@@ -699,7 +738,7 @@
             </div>
             <div class="feature">
                 <h3>Holdings è gratis?</h3>
-                <p>Sì — tutto il monitoraggio essenziale è gratis, inclusa la dashboard di crescita. Holdings Pro è un acquisto singolo da 19,99 € che sblocca ripartizione geografica e per società e settori, valutazioni immobiliari, report PDF e importazione/esportazione CSV. Nessun abbonamento.</p>
+                <p>Sì — tutto il monitoraggio essenziale è gratis, inclusa la dashboard di crescita. Holdings Pro è un acquisto singolo da 19,99 € che sblocca ripartizione geografica e per società e settori, valutazioni immobiliari, report PDF e importazione/esportazione CSV. Nessun abbonamento per Pro. L'analisi AI facoltativa si paga a parte, a consumo.</p>
             </div>
             <div class="feature">
                 <h3>Su quali dispositivi funziona Holdings?</h3>
@@ -750,7 +789,7 @@
           "name": "Holdings è gratis?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sì — tutto il monitoraggio essenziale è gratis, inclusa la dashboard di crescita. Holdings Pro è un acquisto singolo da 19,99 € che sblocca ripartizione geografica e per società e settori, valutazioni immobiliari, report PDF e importazione/esportazione CSV. Nessun abbonamento."
+            "text": "Sì — tutto il monitoraggio essenziale è gratis, inclusa la dashboard di crescita. Holdings Pro è un acquisto singolo da 19,99 € che sblocca ripartizione geografica e per società e settori, valutazioni immobiliari, report PDF e importazione/esportazione CSV. Nessun abbonamento per Pro. L'analisi AI facoltativa si paga a parte, a consumo."
           }
         },
         {

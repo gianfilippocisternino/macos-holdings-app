@@ -24,6 +24,7 @@ I tuoi dati vivono solo sul tuo dispositivo e nel tuo account iCloud privato —
 - **Multivaluta**: ogni asset mantiene la valuta nativa; i totali si riconciliano nella valuta scelta tra oltre 12 valute supportate.
 - **Immobili**: valutazioni OMI per gli immobili italiani (per comune, zona e tipologia), stime HPI per USA/DE/ES, tracciamento opzionale del prezzo d'acquisto, collegamento del mutuo.
 - **Storico mensile**: ogni asset registra un valore al mese; grafico del patrimonio, ripartizioni per categoria, composizione geografica e settoriale.
+- **Analisi AI (facoltativa)**: un report sull'intero portafoglio — punteggio di rischio su 100, concentrazioni, cosa va bene, diversificazione, spunti — da un riepilogo anonimo preparato sul dispositivo (nomi, ticker, istituti, note e indirizzi non vengono mai inviati). Il server non conserva dati del portafoglio leggibili (il risultato cifrato viene cancellato dopo il download, al massimo dopo 24 ore); le richieste sono verificate con Apple App Attest; i report restano salvati solo sul dispositivo. Si paga a parte rispetto a Pro (abbonamento o pacchetti di analisi tramite App Store); a scopo informativo, non è consulenza finanziaria.
 - **Sincronizzazione iCloud CloudKit**: i dati vivono nel tuo container iCloud privato, sincronizzati tra i tuoi dispositivi Apple.
 - **Blocco biometrico**: protezione opzionale con Face ID / Touch ID.
 - **iPhone Duo**: da aperto la dashboard mostra patrimonio, allocazione e analisi fianco a fianco; il layout resta stabile quando pieghi o ruoti il dispositivo.
@@ -38,6 +39,7 @@ I tuoi dati vivono solo sul tuo dispositivo e nel tuo account iCloud privato —
 ## Prezzi
 
 - **Gratis**: traccia asset illimitati in tutte le categorie. Prezzi live, conversione FX, dashboard di crescita, storico mensile. Nessun account, nessuna carta di credito.
+- **Analisi AI**: facoltativa, separata da Pro, a consumo tramite App Store (abbonamento o pacchetti di analisi; i prezzi sono mostrati nell'app).
 - **Holdings Pro**: acquisto singolo da 19,99 €. Sblocca ripartizione geografica e per società e settori, valutazioni immobiliari, report PDF e importazione/esportazione CSV. In condivisione con la famiglia.
 
 ## Domande frequenti
@@ -48,7 +50,7 @@ I tuoi dati vivono solo sul tuo dispositivo e nel tuo account iCloud privato —
 
 ## Privacy
 
-- **Nessun account, nessun server, nessun database backend.** Non c'è nulla che Holdings, o chiunque altro, possa violare — perché non riceviamo mai i tuoi dati.
+- **Nessun account, nessun server per il tuo portafoglio, nessun database backend.** (L'analisi AI facoltativa invia un riepilogo anonimo solo quando la avvii.) Non c'è nulla che Holdings, o chiunque altro, possa violare — perché non esiste un database di portafogli.
 - **Il tuo iCloud, i tuoi dati.** I dati finanziari restano sul tuo dispositivo e si sincronizzano solo tramite il tuo container iCloud CloudKit privato, crittografato in transito e a riposo da Apple.
 - **Nessun identificatore pubblicitario (IDFA), nessun data broker.** Analytics anonimi tramite Firebase registrano solo le schermate aperte e i conteggi degli eventi — mai valori, ticker o chi sei.
 

@@ -81,6 +81,7 @@
         "Track 13 asset categories including vehicles, equity stakes and pension",
         "Monthly history with charts and category breakdowns",
         "Geography and sector composition breakdown",
+        "Optional AI analysis of the whole portfolio: risk score, concentrations, diversification and ideas, from an anonymous summary built on your device",
         "Private iCloud sync across your Mac, iPad and iPhone — no servers, no accounts",
         "Designed for iPhone Duo: a wide dashboard when unfolded, steady as you fold and rotate it"
       ],
@@ -191,6 +192,18 @@
             color: #424245;
             line-height: 1.55;
         }
+        .advisor { max-width: 980px; }
+        .advisor-grid { display: flex; gap: 48px; align-items: center; margin-top: 24px; }
+        .advisor-text { flex: 1; }
+        .advisor-text .lead { margin-bottom: 20px; }
+        .advisor-list { list-style: none; padding: 0; margin: 0 0 20px; }
+        .advisor-list li { font-size: 15px; color: #424245; line-height: 1.55; padding: 10px 0 10px 28px; position: relative; border-top: 1px solid #e8e8ed; }
+        .advisor-list li::before { content: "✦"; position: absolute; left: 0; top: 10px; color: #8e4ec6; }
+        .advisor-list strong { color: #1d1d1f; }
+        .advisor-note { font-size: 13px; color: #6e6e73; line-height: 1.5; }
+        .advisor-shot { flex: 0 0 280px; }
+        .advisor-shot img { width: 100%; height: auto; display: block; border-radius: 28px; box-shadow: 0 12px 40px rgba(0,0,0,.18); }
+        @media (max-width: 720px) { .advisor-grid { flex-direction: column; } .advisor-shot { flex-basis: auto; max-width: 260px; } }
         .features {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -578,6 +591,27 @@
         <p class="shot-captions">Net-worth dashboard on Mac · Every account, investment, property and debt on iPad · Your portfolio on iPhone — all synced privately via iCloud.</p>
     </section>
 
+    <section class="advisor" id="ai-analysis">
+        <p class="eyebrow">AI analysis</p>
+        <h2>A second opinion on your whole portfolio.</h2>
+        <div class="advisor-grid">
+            <div class="advisor-text">
+                <p class="lead">Tap <em>Analyze your data</em> and Holdings turns your net worth into a clear report: a risk score out of 100, concentrations to watch, what is going well, diversification across asset classes, and ideas to consider — written for your age, horizon and risk tolerance.</p>
+                <ul class="advisor-list">
+                    <li><strong>Built from your own numbers.</strong> Debts, currencies, geographic and sector breakdowns, monthly history and the short profile you fill in are all taken into account.</li>
+                    <li><strong>Anonymous payload, built on your device.</strong> Names, tickers, institutions, notes and addresses are never sent: each holding goes out under an anonymous code.</li>
+                    <li><strong>Nothing readable kept on the server.</strong> The result waits there encrypted until your device downloads it (deleted after 5 minutes, 24 hours at most). Your analyses are saved on your device only.</li>
+                    <li><strong>Verified requests.</strong> Apple's App Attest checks that requests come from a genuine copy of Holdings, with no account or sign-up.</li>
+                    <li><strong>Export and history.</strong> Keep every report on your devices, compare over time, export as PDF.</li>
+                </ul>
+                <p class="advisor-note">Optional and separate from Pro: it is paid per use (a subscription or packs of analyses, through the App Store), and everything else in Holdings works without it. Your data is sent only when you start an analysis, after you accept the disclaimer, and is passed on to Anthropic, which runs the AI. Informational only, not financial advice.</p>
+            </div>
+            <div class="advisor-shot">
+                <img src="assets/screenshots/advisor-iphone-en.webp" alt="AI analysis in Holdings on iPhone: risk score 64 out of 100 with an example report" width="520" height="1131" loading="lazy">
+            </div>
+        </div>
+    </section>
+
     <section>
         <h2>What Holdings tracks</h2>
         <div class="features">
@@ -620,7 +654,7 @@
         <div class="privacy-block">
             <p class="eyebrow">Privacy</p>
             <h2>Private by design — and by architecture.</h2>
-            <p class="lead">There's no Holdings account. There's no Holdings backend. Your portfolio lives inside your Apple ID's encrypted iCloud, where only you and your devices can read it. We literally cannot see your data, because we don't have it.</p>
+            <p class="lead">There's no Holdings account. There's no Holdings backend. Your portfolio lives inside your Apple ID's encrypted iCloud, where only you and your devices can read it. We literally cannot see your data, because we don't have it. The one exception is the optional AI analysis, which sends an anonymous summary only when you ask for it (see above).</p>
             <div class="privacy-grid">
                 <div class="privacy-claim">
                     <h3>Your iCloud, your data</h3>
@@ -655,6 +689,11 @@
                 <p class="price">$19.99 · one-time purchase<br>Family Sharing supported</p>
                 <p>Unlock geography and company/sector breakdowns, real-estate valuations, PDF reports and CSV import/export. No subscription, ever.</p>
             </div>
+            <div class="plan free">
+                <h3>AI analysis</h3>
+                <p class="price">Optional · pay per use</p>
+                <p>A subscription or packs of analyses through the App Store, separate from Pro. Prices are shown in the app before you buy.</p>
+            </div>
         </div>
     </section>
 
@@ -673,8 +712,8 @@
     <section id="about">
         <div class="built">
             <h2>Who makes Holdings</h2>
-            <p>Holdings is designed and built by Gianfilippo Cisternino, an independent developer. It's a native SwiftUI app, one codebase for Mac, iPad and iPhone, with no backend: your data never reaches a server of mine, because there isn't one.</p>
-            <p>The business model is just as simple: a one-time Pro purchase. No ads, no subscriptions, no data sales. Questions, bugs and ideas reach me directly at <a href="mailto:gianfilippo.cisternino@gmail.com">gianfilippo.cisternino@gmail.com</a> &middot; <a href="https://github.com/gianfilippocisternino">GitHub</a></p>
+            <p>Holdings is designed and built by Gianfilippo Cisternino, an independent developer. It's a native SwiftUI app, one codebase for Mac, iPad and iPhone, with no backend for your portfolio: your data never reaches a server of mine, except the anonymous summary of the optional AI analysis, which you start yourself.</p>
+            <p>The business model is just as simple: a one-time Pro purchase, plus the optional AI analysis paid per use. No ads, no data sales. Questions, bugs and ideas reach me directly at <a href="mailto:gianfilippo.cisternino@gmail.com">gianfilippo.cisternino@gmail.com</a> &middot; <a href="https://github.com/gianfilippocisternino">GitHub</a></p>
         </div>
     </section>
 
@@ -695,7 +734,7 @@
             </div>
             <div class="feature">
                 <h3>Can Holdings (or anyone else) see my portfolio?</h3>
-                <p>No. We have no servers and no database that holds your data. Sync happens directly between your Apple devices through your encrypted iCloud. There is no way for us, or any third party, to access your balances or tickers — because we never receive them.</p>
+                <p>No. We have no database that holds your data, and tracking never touches a server of ours. (Only if you choose the optional AI analysis, an anonymous summary is sent to run it; see the AI analysis section.) Sync happens directly between your Apple devices through your encrypted iCloud. There is no way for us, or any third party, to access your balances or tickers — because we never receive them.</p>
             </div>
             <div class="feature">
                 <h3>Where do live prices come from?</h3>
@@ -707,7 +746,7 @@
             </div>
             <div class="feature">
                 <h3>Is Holdings free?</h3>
-                <p>Yes — all core tracking is free, including the growth-rate dashboard. Holdings Pro is a one-time $19.99 purchase that unlocks geography and company/sector breakdowns, real-estate valuations, PDF reports and CSV import/export. No subscriptions.</p>
+                <p>Yes — all core tracking is free, including the growth-rate dashboard. Holdings Pro is a one-time $19.99 purchase that unlocks geography and company/sector breakdowns, real-estate valuations, PDF reports and CSV import/export. No subscription for Pro. The optional AI analysis is paid separately, per use.</p>
             </div>
             <div class="feature">
                 <h3>What devices does Holdings run on?</h3>
@@ -773,7 +812,7 @@
           "name": "Is Holdings free?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes — all core tracking is free, including the growth-rate dashboard. Holdings Pro is a one-time $19.99 purchase that unlocks geography and company/sector breakdowns, real-estate valuations, PDF reports and CSV import/export. No subscriptions."
+            "text": "Yes — all core tracking is free, including the growth-rate dashboard. Holdings Pro is a one-time $19.99 purchase that unlocks geography and company/sector breakdowns, real-estate valuations, PDF reports and CSV import/export. No subscription for Pro. The optional AI analysis is paid separately, per use."
           }
         },
         {
