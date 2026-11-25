@@ -11,14 +11,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon-180.png">
     <link rel="manifest" href="site.webmanifest">
-    <meta name="description" content="Privacy policy for Holdings, a personal net-worth tracker for macOS and iOS. Your financial data stays on your device and syncs through your private iCloud. Anonymous usage analytics only — no IDFA, no personal data.">
+    <meta name="description" content="Privacy policy for Holdings, a personal net-worth tracker for macOS and iOS. Your financial data stays on your device and syncs through your private iCloud. Anonymous usage analytics, plus an optional AI analysis that sends an anonymous summary only when you start it. No IDFA.">
     <link rel="canonical" href="https://gianfilippocisternino.github.io/macos-holdings-app/privacy.html">
     <link rel="alternate" hreflang="en" href="https://gianfilippocisternino.github.io/macos-holdings-app/privacy.html">
     <link rel="alternate" hreflang="it" href="https://gianfilippocisternino.github.io/macos-holdings-app/it/privacy.html">
     <link rel="alternate" hreflang="x-default" href="https://gianfilippocisternino.github.io/macos-holdings-app/privacy.html">
     <meta name="author" content="Gianfilippo Cisternino">
     <meta property="og:title" content="Holdings — Privacy Policy">
-    <meta property="og:description" content="What data Holdings stores, what we collect, and your rights. Data stays on your device; iCloud sync only; anonymous analytics with no IDFA.">
+    <meta property="og:description" content="What data Holdings stores, what we collect, and your rights. Data stays on your device and in your iCloud; optional AI analysis sends an anonymous summary only when you start it; anonymous analytics with no IDFA.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://gianfilippocisternino.github.io/macos-holdings-app/privacy.html">
     <meta property="og:image" content="https://gianfilippocisternino.github.io/macos-holdings-app/assets/logo/logo.png">
@@ -33,7 +33,7 @@
       "name": "Holdings Privacy Policy",
       "url": "https://gianfilippocisternino.github.io/macos-holdings-app/privacy.html",
       "inLanguage": "en",
-      "dateModified": "2026-05-21",
+      "dateModified": "2026-11-25",
       "isPartOf": {
         "@type": "WebSite",
         "name": "Holdings",
@@ -118,7 +118,7 @@
     <div class="header">
         <img src="assets/logo/logo.png" alt="Holdings app icon" width="64" height="64" style="border-radius: 14px; margin-bottom: 16px;">
         <h1>Privacy Policy</h1>
-        <p>Last updated: June 5, 2026</p>
+        <p>Last updated: November 25, 2026</p>
     </div>
 
     <section>
@@ -127,7 +127,7 @@
         <h2>Where your data lives</h2>
         <ul>
             <li>All your financial data — assets, monthly values, real-estate details, mortgages — is stored locally on your device using Apple's Core Data.</li>
-            <li>If you are signed in to iCloud, your data syncs across your devices through the App's private CloudKit container (<code>iCloud.it.cisternino.Holdings</code>). It travels between your devices through Apple's encrypted infrastructure and is never sent to our servers — we don't have any.</li>
+            <li>If you are signed in to iCloud, your data syncs across your devices through the App's private CloudKit container (<code>iCloud.it.cisternino.Holdings</code>). It travels between your devices through Apple's encrypted infrastructure and is never sent to our servers. The one exception is the optional AI analysis, which sends an anonymous summary only when you start it (see <a href="#ai-analysis">AI Analysis</a> below).</li>
             <li>Your display-currency preference is also stored in your iCloud key-value store so it follows you across devices.</li>
         </ul>
 
@@ -153,9 +153,9 @@
         <h2>What we do not collect</h2>
         <ul>
             <li>We do not collect your name, email, Apple ID, or any contact information.</li>
-            <li>We do not collect or transmit the contents of your portfolio — asset names, tickers, values, real-estate addresses, or any financial figures.</li>
+            <li>We do not collect or transmit the contents of your portfolio — asset names, tickers, values, real-estate addresses, or any financial figures — except the anonymous summary of the optional AI analysis, only if you start it and only as described in <a href="#ai-analysis">AI Analysis</a> below (no asset names, tickers, institutions, notes or addresses).</li>
             <li>We do not use Apple's advertising identifier (IDFA).</li>
-            <li>We do not sell, share, or transfer data to third parties beyond the Firebase Analytics service described above.</li>
+            <li>We do not sell, share, or transfer data to third parties beyond the Firebase Analytics service described above and, if you use the optional AI analysis, the providers described in <a href="#ai-analysis">AI Analysis</a> (Cloudflare and Anthropic).</li>
             <li>We do not run cross-app tracking, retargeting, or advertising SDKs.</li>
         </ul>
 
@@ -168,11 +168,40 @@
         </ul>
 
         <h2>In-app purchases</h2>
-        <p>Holdings Pro is sold through Apple's standard In-App Purchase system. We never see your payment details. Apple may share aggregated, anonymized sales information with us through App Store Connect.</p>
+        <p>Holdings Pro is sold through Apple's standard In-App Purchase system. We never see your payment details. The same applies to the optional AI analysis purchases (subscription or credit packs); how their balance is kept is described in <a href="#ai-analysis">AI Analysis</a>. Apple may share aggregated, anonymized sales information with us through App Store Connect.</p>
+
+        <h2 id="ai-analysis">AI Analysis (Advisor)</h2>
+        <p>AI Analysis is optional. Nothing is sent unless you tap "Start analysis".</p>
+        <p><strong>What is sent.</strong> The app builds the data on your device and sends:</p>
+        <ul>
+            <li>amounts and percentages per asset class, per asset (identified only by an anonymous code such as <code>a_01</code>), currency exposure, risk and diversification metrics, and your monthly net-worth history;</li>
+            <li>if you answered them, your profile: age band, investment horizon, risk tolerance, goal and monthly expenses;</li>
+            <li>your display currency, language and region (e.g. <code>it-IT</code>), debts and their links to assets, and geographic and sector breakdowns of your holdings.</li>
+        </ul>
+        <p>Like any internet request, it also reaches the servers with your device's IP address, which our server does not use or store; Cloudflare's own infrastructure may log it for at most 7 days.</p>
+        <p>Besides the data above, each request carries the random identifier of your purchase balance (described under "Your purchases" below) and the anonymous identifier of the app installation, so the server can check your balance and rate-limit the device.</p>
+        <p>The app does <strong>not</strong> send asset or account names, institutions, tickers, notes, addresses, your name, email or Apple ID, and it does not read your contacts, photos or location for this feature.</p>
+        <p><strong>Who receives it.</strong></p>
+        <ul>
+            <li><strong>Gianfilippo Cisternino</strong> (the developer and data controller), through a server hosted on Cloudflare (Cloudflare Workers), which checks that the request comes from a genuine copy of the app (Apple App Attest), limits the number of requests per device and keeps your purchase balance.</li>
+            <li><strong>Anthropic, PBC</strong>, the AI provider, through its API, which runs the model that writes the analysis. According to <a href="https://platform.claude.com/docs/en/manage-claude/api-and-data-retention" rel="noopener">Anthropic's API data retention policy</a>, the content of API requests (your data and the analysis) is not retained by Anthropic by default for the model we use, and retained data is never used to train its models without express permission. Exception: if a request is flagged for a usage-policy violation, Anthropic may retain it for up to 2 years, and may retain data where the law requires.</li>
+        </ul>
+        <p><strong>What our server stores.</strong></p>
+        <ul>
+            <li><em>While the analysis runs.</em> Your data is held in the server's memory only for the time needed to make one call to the AI, together with a one-time encryption key your device generates for that analysis. It is never written to disk.</li>
+            <li><em>The result.</em> When the analysis is ready, the server stores it <strong>encrypted</strong> with that key (AES-256-GCM). The key is not kept on disk, so the stored copy can't be read by us. The encrypted result is deleted <strong>5 minutes after your app first downloads it</strong> (kept that long in case the download is interrupted), or <strong>24 hours after you started the analysis</strong> if it was never downloaded, whichever comes first. After that it is gone.</li>
+            <li><em>Abuse prevention.</em> An anonymous identifier of the app installation (the App Attest key), its public key, a request counter, the time windows used for the rate limit and the time of the last request. They are deleted automatically 180 days after the last request from that installation; if you use the analysis again later, the app simply registers a new identifier.</li>
+            <li><em>Your purchases.</em> If you buy AI analyses (subscription or credit packs) or use the free analysis included with Holdings Pro, the server keeps a balance for a random identifier (a UUID the app generates for you and syncs through your iCloud so it works on all your devices; it is not your Apple ID, name or email, and not derived from your device). While an analysis is stored (see above) the server records next to it the installation identifier and this random identifier, so for that time the two are linked. The balance holds your credits, your subscription (plan, expiry, analyses used this month), the identifiers of the Apple transactions already counted, and refunds. The signed receipt Apple gives the app is checked and discarded, never stored. These records are deleted automatically, together with any unused credits, after 2 years without any activity. Activity means opening or using the AI analysis, buying or restoring a purchase, or an App Store event such as a renewal or a refund; an active subscription counts as activity until it ends. To have them deleted sooner, write to the contact below. Since we don't know who you are, we find your records by the random identifier: in the app, open Settings › AI Analysis: data deletion, where you can copy the identifier or write us an email with it already filled in (the section appears once you have accepted the AI analysis disclaimer). If you can't open the app, the Order ID of your purchase from Apple's receipt works too. We then delete the balance and the records that link your Apple purchases to it; we keep only the anonymous mark of a purchase Apple refunded, so it can't be counted again. Credits and analyses left are lost when the balance is deleted. Once you have accepted the AI analysis disclaimer, the app presents your active purchases again (Holdings Pro, an active subscription) each time it starts, so a new balance is created for them at its next launch unless you delete the app.</li>
+            <li><em>Logs.</em> Technical logs record the request path, status, duration and the model's token usage, never the content, never your identifier or receipts. Cloudflare keeps them for at most 7 days.</li>
+        </ul>
+        <p><strong>On your device.</strong> Your analyses are saved on your device (the most recent 100) so you can read them again; you can delete them one by one or all together from the Advisor history. Your questionnaire answers are stored on your device and synced through your iCloud, like the rest of your data.</p>
+        <p><strong>Legal basis and purpose (GDPR).</strong> The data is used only to provide the analysis you request (your explicit action of starting it). It is not used for advertising, tracking or profiling, and is not sold. The legal basis is your explicit consent, which you give by accepting the AI analysis notice and starting an analysis and can withdraw at any time by stopping using the feature or asking us to delete your data (Art. 6(1)(a) GDPR), and, for purchases, the contract with you (Art. 6(1)(b)). Cloudflare and Anthropic may process data outside the European Economic Area, including in the United States; transfers rely on the Standard Contractual Clauses or other safeguards provided by their data processing terms. You have the right to access, rectify, erase, restrict and port your data and to complain to your data protection authority (in Italy, the Garante per la protezione dei dati personali).</p>
+        <p><strong>Not advice.</strong> The analysis is generated by artificial intelligence, may contain errors and is for information and education only. It is not personalized financial, tax or legal advice.</p>
+        <p><strong>Your choices.</strong> You can use Holdings without ever running an analysis. We keep no readable portfolio data or analysis on our server, and the encrypted result deletes itself as described above. To remove the cached analysis from your device, delete it from the Advisor history or delete the app data. To have your purchase balance (the random identifier and its records) deleted (Settings › AI Analysis: data deletion has the identifier and an email shortcut), or for any question or request: gianfilippo.cisternino@gmail.com.</p>
 
         <h2>Your rights</h2>
         <p>You can delete your data at any time by removing the App from your devices and clearing the data from your iCloud account through iOS Settings &gt; [your name] &gt; iCloud &gt; Manage Storage. You can also disable iCloud sync for the App in the same Settings panel.</p>
-        <p>If you are in the EU or another jurisdiction with applicable privacy laws (GDPR, CCPA, etc.), you have the right to request information about, correction of, or deletion of any data we may hold about you. Since the only data we hold is the anonymous Firebase Analytics described above (not tied to any personal identifier we control), the practical scope of these requests is limited, but you can still contact us.</p>
+        <p>If you are in the EU or another jurisdiction with applicable privacy laws (GDPR, CCPA, etc.), you have the right to request information about, correction of, or deletion of any data we may hold about you. Since the only data we hold is the anonymous Firebase Analytics described above and, if you use the optional AI analysis, the records described in <a href="#ai-analysis">AI Analysis</a> (found through a random identifier, not your name), the practical scope of these requests is limited, but you can still contact us.</p>
 
         <h2>Changes to this policy</h2>
         <p>We may update this policy from time to time. Changes will be posted on this page with an updated date.</p>

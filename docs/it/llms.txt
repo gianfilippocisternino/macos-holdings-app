@@ -1,12 +1,12 @@
 # Holdings — Monitoraggio del patrimonio netto per Mac, iPad e iPhone
 
-> App nativa per macOS, iPadOS e iOS che tiene traccia di tutto il tuo patrimonio netto — investimenti, liquidità, immobili, veicoli e debiti — con prezzi di mercato in tempo reale e valutazioni immobiliari ufficiali. Nessun account, nessun server: i tuoi dati vivono nel tuo iCloud privato.
+> App nativa per macOS, iPadOS e iOS che tiene traccia di tutto il tuo patrimonio netto — investimenti, liquidità, immobili, veicoli e debiti — con prezzi di mercato in tempo reale e valutazioni immobiliari ufficiali. Nessun account: i tuoi dati vivono sul dispositivo e nel tuo iCloud privato. Solo l'analisi AI facoltativa, se la usi, invia a un server un riepilogo anonimo che il server non conserva in forma leggibile.
 
 ## Che cos'è Holdings?
 
 Holdings è un'app per il monitoraggio del patrimonio netto creata in modo nativo per le piattaforme Apple. Recupera prezzi in tempo reale da Yahoo Finance per gli asset negoziabili (azioni, ETF, obbligazioni, crypto), converte tutto nella valuta scelta con i tassi di cambio correnti e aggiunge valutazioni immobiliari per gli immobili in Italia (tramite il dataset ufficiale OMI) e stime basate su HPI per USA, Germania e Spagna. I mutui sono collegati agli immobili che finanziano, così il patrimonio netto riflette la leva reale.
 
-I tuoi dati vivono solo sul tuo dispositivo e nel tuo account iCloud privato — nessun backend, nessun account utente, nessuna registrazione. Holdings non ha modo di vedere il tuo portafoglio perché non ha server che potrebbero farlo.
+I tuoi dati vivono solo sul tuo dispositivo e nel tuo account iCloud privato — nessun account utente, nessuna registrazione, nessun database Holdings del tuo portafoglio. Unica eccezione: l'analisi AI facoltativa; solo quando la avvii, un riepilogo anonimo (senza nomi, ticker, istituti, note o indirizzi) arriva a un server che non lo conserva in forma leggibile e cancella il risultato cifrato entro 24 ore; vedi l'informativa privacy sull'analisi con IA (https://gianfilippocisternino.github.io/macos-holdings-app/it/privacy.html#ai-analysis).
 
 ## Perché Holdings è diverso
 
@@ -24,7 +24,7 @@ I tuoi dati vivono solo sul tuo dispositivo e nel tuo account iCloud privato —
 - **Multivaluta**: ogni asset mantiene la valuta nativa; i totali si riconciliano nella valuta scelta tra oltre 12 valute supportate.
 - **Immobili**: valutazioni OMI per gli immobili italiani (per comune, zona e tipologia), stime HPI per USA/DE/ES, tracciamento opzionale del prezzo d'acquisto, collegamento del mutuo.
 - **Storico mensile**: ogni asset registra un valore al mese; grafico del patrimonio, ripartizioni per categoria, composizione geografica e settoriale.
-- **Analisi AI (facoltativa)**: un report sull'intero portafoglio — punteggio di rischio su 100, concentrazioni, cosa va bene, diversificazione, spunti — da un riepilogo anonimo preparato sul dispositivo (nomi, ticker, istituti, note e indirizzi non vengono mai inviati). Il server non conserva dati del portafoglio leggibili (il risultato cifrato viene cancellato dopo il download, al massimo dopo 24 ore); le richieste sono verificate con Apple App Attest; i report restano salvati solo sul dispositivo. Si paga a parte rispetto a Pro (abbonamento o pacchetti di analisi tramite App Store); a scopo informativo, non è consulenza finanziaria.
+- **Analisi AI (facoltativa)**: un report sull'intero portafoglio — punteggio di rischio su 100, concentrazioni, cosa va bene, diversificazione, spunti — da un riepilogo anonimo preparato sul dispositivo (nomi, ticker, istituti, note e indirizzi non vengono mai inviati). Il server non conserva dati del portafoglio leggibili (il risultato cifrato viene cancellato 5 minuti dopo il primo download, al massimo dopo 24 ore; restano dati tecnici anonimi come il saldo degli acquisti e i limiti anti-abuso, come indica l'informativa privacy: https://gianfilippocisternino.github.io/macos-holdings-app/it/privacy.html#ai-analysis); le richieste sono verificate con Apple App Attest; i report restano salvati solo sul dispositivo. Si paga a parte rispetto a Pro (abbonamento o pacchetti di analisi tramite App Store); a scopo informativo, non è consulenza finanziaria.
 - **Sincronizzazione iCloud CloudKit**: i dati vivono nel tuo container iCloud privato, sincronizzati tra i tuoi dispositivi Apple.
 - **Blocco biometrico**: protezione opzionale con Face ID / Touch ID.
 - **iPhone Duo**: da aperto la dashboard mostra patrimonio, allocazione e analisi fianco a fianco; il layout resta stabile quando pieghi o ruoti il dispositivo.
@@ -46,11 +46,11 @@ I tuoi dati vivono solo sul tuo dispositivo e nel tuo account iCloud privato —
 
 - **Qual è il modo migliore per monitorare il patrimonio netto senza Excel?** Usa un'app dedicata che recupera prezzi e cambi in automatico e valuta gli immobili da dati ufficiali, invece di mantenere formule in Excel. Holdings fa questo e tiene i dati nel tuo iCloud privato.
 - **Devo collegare la banca?** No. Holdings non usa accesso alla banca né aggregatori; legge solo dati di mercato pubblici per i prezzi.
-- **È privato?** Sì — nessun account, nessun server, nessun data broker. I dati restano nell'iCloud crittografato del tuo Apple ID.
+- **È privato?** Sì — nessun account, nessun data broker. I dati restano sul dispositivo e nell'iCloud crittografato del tuo Apple ID; solo l'analisi AI facoltativa, se la usi, invia un riepilogo anonimo che il server non conserva in forma leggibile.
 
 ## Privacy
 
-- **Nessun account, nessun server per il tuo portafoglio, nessun database backend.** (L'analisi AI facoltativa invia un riepilogo anonimo solo quando la avvii.) Non c'è nulla che Holdings, o chiunque altro, possa violare — perché non esiste un database di portafogli.
+- **Nessun account, nessun database del tuo portafoglio.** (L'analisi AI facoltativa invia un riepilogo anonimo solo quando la avvii; il server non lo conserva in forma leggibile.) Non c'è nulla che Holdings, o chiunque altro, possa violare — perché non esiste un database di portafogli.
 - **Il tuo iCloud, i tuoi dati.** I dati finanziari restano sul tuo dispositivo e si sincronizzano solo tramite il tuo container iCloud CloudKit privato, crittografato in transito e a riposo da Apple.
 - **Nessun identificatore pubblicitario (IDFA), nessun data broker.** Analytics anonimi tramite Firebase registrano solo le schermate aperte e i conteggi degli eventi — mai valori, ticker o chi sei.
 

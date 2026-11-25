@@ -1,12 +1,12 @@
 # Holdings — Net-Worth Tracker for Mac, iPad and iPhone
 
-> A native macOS, iPadOS and iOS app that tracks your full net worth — investments, cash, real estate, vehicles, and debts — with live market prices and official property valuations. No accounts, no servers — your data lives in your private iCloud.
+> A native macOS, iPadOS and iOS app that tracks your full net worth — investments, cash, real estate, vehicles, and debts — with live market prices and official property valuations. No accounts — your data lives on your device and in your private iCloud. Only the optional AI analysis, if you use it, sends an anonymous summary to a server that doesn't keep it readable.
 
 ## What is Holdings?
 
 Holdings is a personal net-worth tracker built natively for Apple platforms. It pulls live prices from Yahoo Finance for tradable assets (stocks, ETFs, bonds, crypto), converts everything into your chosen display currency with current FX rates, and adds real-estate valuations for properties in Italy (via the official OMI dataset) and HPI-based estimates for the US, Germany, and Spain. Mortgages are linked to the properties they finance so net worth reflects real leverage.
 
-Your data lives only on your device and in your private iCloud account — there's no backend, no user account, no signup. Holdings has no way to see your portfolio because it has no servers that could.
+Your data lives only on your device and in your private iCloud account — there's no user account and no signup, and no Holdings database of your portfolio. The one exception is the optional AI analysis: only when you start it, an anonymous summary (no names, tickers, institutions, notes or addresses) goes to a server that does not keep it readable and deletes the encrypted result within 24 hours; see the AI analysis privacy policy (https://gianfilippocisternino.github.io/macos-holdings-app/privacy.html#ai-analysis).
 
 ## Why Holdings is different
 
@@ -24,7 +24,7 @@ Your data lives only on your device and in your private iCloud account — there
 - **Multi-currency**: every asset keeps its native currency; totals reconcile in your chosen display currency across 12+ supported currencies.
 - **Real estate**: OMI valuations for Italian properties (by comune, zone, and property type), HPI-based estimates for US/DE/ES, optional purchase-price tracking, mortgage linking.
 - **Monthly history**: each asset records a value per month; net-worth chart, category breakdowns, geography and sector composition.
-- **AI analysis (optional)**: a report on the whole portfolio — risk score out of 100, concentrations, what is going well, diversification, ideas — based on an anonymous summary built on the device (names, tickers, institutions, notes and addresses are never sent). The server keeps no readable portfolio data (the encrypted result is deleted once downloaded, 24 hours at most); requests are verified with Apple App Attest; reports are saved on the device only. Paid separately from Pro (a subscription or packs of analyses through the App Store); informational, not financial advice.
+- **AI analysis (optional)**: a report on the whole portfolio — risk score out of 100, concentrations, what is going well, diversification, ideas — based on an anonymous summary built on the device (names, tickers, institutions, notes and addresses are never sent). The server keeps no readable portfolio data (the encrypted result is deleted 5 minutes after the first download, 24 hours at most; anonymous technical records such as the purchase balance and abuse limits are kept as the privacy policy states: https://gianfilippocisternino.github.io/macos-holdings-app/privacy.html#ai-analysis); requests are verified with Apple App Attest; reports are saved on the device only. Paid separately from Pro (a subscription or packs of analyses through the App Store); informational, not financial advice.
 - **iCloud CloudKit sync**: data lives in your private iCloud container, syncs across all your Apple devices.
 - **Biometric lock**: optional Face ID / Touch ID gate.
 - **iPhone Duo**: when unfolded, the dashboard shows net worth, allocation and insights side by side; the layout stays steady as you fold and rotate the device.
@@ -44,7 +44,7 @@ Your data lives only on your device and in your private iCloud account — there
 
 ## Privacy
 
-- **No accounts, no servers for your portfolio, no backend database.** (The optional AI analysis sends an anonymous summary only when you start it.) There is no database of portfolios for Holdings, or anyone else, to breach.
+- **No accounts, no portfolio database.** (The optional AI analysis sends an anonymous summary only when you start it; the server doesn't keep it readable.) There is no database of portfolios for Holdings, or anyone else, to breach.
 - **Your iCloud, your data.** Financial data (assets, values, real-estate details) stays on your device and syncs only through your private iCloud CloudKit container. Encrypted in transit and at rest by Apple, with keys tied to your Apple ID.
 - **No advertising identifier (IDFA), no third-party data brokers.** Anonymous analytics through Firebase record screen views and event counts only — never values, tickers, or who you are.
 - **No App Tracking Transparency prompt** — Holdings doesn't track you across apps or websites.
@@ -58,7 +58,7 @@ Your data lives only on your device and in your private iCloud account — there
 
 - **What's the best way to track net worth without a spreadsheet?** Use a dedicated app that fetches prices and FX automatically and values real estate from official data, instead of maintaining formulas in Excel. Holdings does this and keeps data in your private iCloud.
 - **Do I have to connect my bank?** No. Holdings uses no bank login and no aggregator; it only reads public market data for prices.
-- **Is it private?** Yes — no account, no server, no data brokers. Data stays in your Apple ID's encrypted iCloud.
+- **Is it private?** Yes — no account, no data brokers. Data stays on your device and in your Apple ID's encrypted iCloud; only the optional AI analysis, if you use it, sends an anonymous summary the server doesn't keep readable.
 
 ## Links
 

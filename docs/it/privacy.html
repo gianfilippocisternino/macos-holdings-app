@@ -11,14 +11,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/favicon-180.png">
     <link rel="manifest" href="../site.webmanifest">
-    <meta name="description" content="Informativa sulla privacy di Holdings: i dati finanziari restano sul dispositivo e nel tuo iCloud privato. Solo statistiche d'uso anonime, niente IDFA.">
+    <meta name="description" content="Informativa sulla privacy di Holdings: i dati finanziari restano sul dispositivo e nel tuo iCloud privato. Statistiche d'uso anonime e, solo se la avvii tu, un'analisi con IA facoltativa che invia un riepilogo anonimo. Niente IDFA.">
     <link rel="canonical" href="https://gianfilippocisternino.github.io/macos-holdings-app/it/privacy.html">
     <link rel="alternate" hreflang="en" href="https://gianfilippocisternino.github.io/macos-holdings-app/privacy.html">
     <link rel="alternate" hreflang="it" href="https://gianfilippocisternino.github.io/macos-holdings-app/it/privacy.html">
     <link rel="alternate" hreflang="x-default" href="https://gianfilippocisternino.github.io/macos-holdings-app/privacy.html">
     <meta name="author" content="Gianfilippo Cisternino">
     <meta property="og:title" content="Holdings — Informativa sulla privacy">
-    <meta property="og:description" content="Quali dati conserva Holdings, cosa raccogliamo e quali sono i tuoi diritti. I dati restano sul dispositivo; solo sincronizzazione iCloud; statistiche anonime senza IDFA.">
+    <meta property="og:description" content="Quali dati conserva Holdings, cosa raccogliamo e quali sono i tuoi diritti. I dati restano sul dispositivo e nel tuo iCloud; l'analisi con IA facoltativa invia un riepilogo anonimo solo quando la avvii; statistiche anonime senza IDFA.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://gianfilippocisternino.github.io/macos-holdings-app/it/privacy.html">
     <meta property="og:locale" content="it_IT">
@@ -34,7 +34,7 @@
       "name": "Informativa sulla privacy di Holdings",
       "url": "https://gianfilippocisternino.github.io/macos-holdings-app/it/privacy.html",
       "inLanguage": "it",
-      "dateModified": "2026-05-21",
+      "dateModified": "2026-11-25",
       "isPartOf": {
         "@type": "WebSite",
         "name": "Holdings",
@@ -119,7 +119,7 @@
     <div class="header">
         <img src="../assets/logo/logo.png" alt="Icona dell'app Holdings" width="64" height="64" style="border-radius: 14px; margin-bottom: 16px;">
         <h1>Informativa sulla privacy</h1>
-        <p>Ultimo aggiornamento: 5 giugno 2026</p>
+        <p>Ultimo aggiornamento: 25 novembre 2026</p>
     </div>
 
     <section>
@@ -128,7 +128,7 @@
         <h2>Dove si trovano i tuoi dati</h2>
         <ul>
             <li>Tutti i tuoi dati finanziari (asset, valori mensili, dettagli degli immobili, mutui) sono salvati in locale sul tuo dispositivo tramite Core Data di Apple.</li>
-            <li>Se hai effettuato l'accesso a iCloud, i dati si sincronizzano tra i tuoi dispositivi tramite il contenitore CloudKit privato dell'App (<code>iCloud.it.cisternino.Holdings</code>). Viaggiano tra i tuoi dispositivi attraverso l'infrastruttura cifrata di Apple e non vengono mai inviati ai nostri server: non ne abbiamo.</li>
+            <li>Se hai effettuato l'accesso a iCloud, i dati si sincronizzano tra i tuoi dispositivi tramite il contenitore CloudKit privato dell'App (<code>iCloud.it.cisternino.Holdings</code>). Viaggiano tra i tuoi dispositivi attraverso l'infrastruttura cifrata di Apple e non vengono mai inviati ai nostri server. Unica eccezione: l'analisi con IA facoltativa, che invia un riepilogo anonimo solo quando la avvii (vedi <a href="#ai-analysis">Analisi con IA</a> più sotto).</li>
             <li>Anche la valuta di visualizzazione che scegli viene salvata nell'archivio chiave-valore di iCloud, così ti segue su tutti i dispositivi.</li>
         </ul>
 
@@ -154,9 +154,9 @@
         <h2>Cosa non raccogliamo</h2>
         <ul>
             <li>Non raccogliamo il tuo nome, la tua email, il tuo ID Apple né altri dati di contatto.</li>
-            <li>Non raccogliamo né trasmettiamo il contenuto del tuo portafoglio: nomi degli asset, ticker, valori, indirizzi degli immobili o qualsiasi dato finanziario.</li>
+            <li>Non raccogliamo né trasmettiamo il contenuto del tuo portafoglio: nomi degli asset, ticker, valori, indirizzi degli immobili o qualsiasi dato finanziario, salvo il riepilogo anonimo dell'analisi con IA facoltativa, solo se la avvii e solo come descritto in <a href="#ai-analysis">Analisi con IA</a> più sotto (nessun nome di asset, ticker, istituto, nota o indirizzo).</li>
             <li>Non usiamo l'identificativo pubblicitario di Apple (IDFA).</li>
-            <li>Non vendiamo, condividiamo né trasferiamo dati a terzi, oltre al servizio Firebase Analytics descritto sopra.</li>
+            <li>Non vendiamo, condividiamo né trasferiamo dati a terzi, oltre al servizio Firebase Analytics descritto sopra e, se usi l'analisi con IA facoltativa, ai fornitori descritti in <a href="#ai-analysis">Analisi con IA</a> (Cloudflare e Anthropic).</li>
             <li>Non effettuiamo tracciamento tra app, retargeting e non usiamo SDK pubblicitari.</li>
         </ul>
 
@@ -169,11 +169,40 @@
         </ul>
 
         <h2>Acquisti in-app</h2>
-        <p>Holdings Pro è venduto tramite il sistema standard di acquisti in-app di Apple. Non vediamo mai i tuoi dati di pagamento. Apple può condividere con noi informazioni di vendita aggregate e anonime tramite App Store Connect.</p>
+        <p>Holdings Pro è venduto tramite il sistema standard di acquisti in-app di Apple. Non vediamo mai i tuoi dati di pagamento. Lo stesso vale per gli acquisti dell'analisi con IA facoltativa (abbonamento o pacchetti di crediti); come ne viene conservato il saldo è descritto in <a href="#ai-analysis">Analisi con IA</a>. Apple può condividere con noi informazioni di vendita aggregate e anonime tramite App Store Connect.</p>
+
+        <h2 id="ai-analysis">Analisi con IA (Advisor)</h2>
+        <p>L'analisi con IA è facoltativa. Non viene inviato nulla finché non tocchi "Avvia analisi".</p>
+        <p><strong>Cosa viene inviato.</strong> L'app prepara i dati sul tuo dispositivo e invia:</p>
+        <ul>
+            <li>importi e percentuali per classe di asset, per singolo asset (identificato solo da un codice anonimo come <code>a_01</code>), esposizione valutaria, metriche di rischio e diversificazione e lo storico mensile del patrimonio netto;</li>
+            <li>se hai risposto, il tuo profilo: fascia d'età, orizzonte d'investimento, tolleranza al rischio, obiettivo e spese mensili;</li>
+            <li>la valuta di visualizzazione, la lingua e la regione (es. <code>it-IT</code>), i debiti e i loro collegamenti agli asset, e le ripartizioni geografiche e settoriali delle posizioni.</li>
+        </ul>
+        <p>Come ogni richiesta internet, arriva ai server insieme all'indirizzo IP del dispositivo, che il nostro server non usa né conserva; l'infrastruttura di Cloudflare può registrarlo per al massimo 7 giorni.</p>
+        <p>Oltre ai dati sopra, ogni richiesta porta con sé l'identificativo casuale del saldo dei tuoi acquisti (descritto sotto, in «I tuoi acquisti») e l'identificativo anonimo dell'installazione dell'app, così il server può controllare il saldo e limitare le richieste del dispositivo.</p>
+        <p>L'app <strong>non</strong> invia nomi di asset o conti, istituti, ticker, note, indirizzi, il tuo nome, la tua email o il tuo Apple ID, e per questa funzione non legge contatti, foto o posizione.</p>
+        <p><strong>Chi lo riceve.</strong></p>
+        <ul>
+            <li><strong>Gianfilippo Cisternino</strong> (sviluppatore e titolare del trattamento), tramite un server ospitato su Cloudflare (Cloudflare Workers), che verifica che la richiesta arrivi da una copia genuina dell'app (Apple App Attest), limita il numero di richieste per dispositivo e conserva il saldo dei tuoi acquisti.</li>
+            <li><strong>Anthropic, PBC</strong>, il fornitore dell'IA, tramite la sua API, che esegue il modello che scrive l'analisi. Secondo la <a href="https://platform.claude.com/docs/en/manage-claude/api-and-data-retention" rel="noopener">policy di Anthropic sulla conservazione dei dati API</a>, il contenuto delle richieste API (i tuoi dati e l'analisi) per il modello che usiamo non è conservato da Anthropic per impostazione predefinita, e i dati conservati non sono mai usati per addestrare i suoi modelli senza permesso esplicito. Eccezione: se una richiesta è segnalata per violazione delle policy d'uso, Anthropic può conservarla fino a 2 anni, e può conservare dati dove la legge lo richiede.</li>
+        </ul>
+        <p><strong>Cosa conserva il nostro server.</strong></p>
+        <ul>
+            <li><em>Mentre l'analisi è in corso.</em> I tuoi dati restano nella memoria del server solo per il tempo di una chiamata all'IA, insieme a una chiave di cifratura monouso che il tuo dispositivo genera per quell'analisi. Non vengono mai scritti su disco.</li>
+            <li><em>Il risultato.</em> Quando l'analisi è pronta, il server la conserva <strong>cifrata</strong> con quella chiave (AES-256-GCM). La chiave non viene salvata su disco, quindi la copia conservata non è leggibile da noi. Il risultato cifrato viene cancellato <strong>5 minuti dopo il primo scaricamento da parte dell'app</strong> (tenuto per quel tempo nel caso il download si interrompa), oppure <strong>24 ore dopo l'avvio dell'analisi</strong> se non è mai stato scaricato, qualunque delle due avvenga prima. Poi non c'è più.</li>
+            <li><em>Prevenzione degli abusi.</em> Un identificativo anonimo dell'installazione dell'app (la chiave App Attest), la sua chiave pubblica, un contatore di richieste, le finestre temporali del limite di richieste e l'ora dell'ultima richiesta. Sono cancellati automaticamente 180 giorni dopo l'ultima richiesta di quell'installazione; se in seguito usi di nuovo l'analisi, l'app registra semplicemente un nuovo identificativo.</li>
+            <li><em>I tuoi acquisti.</em> Se acquisti analisi con IA (abbonamento o pacchetti di crediti) o usi l'analisi gratuita inclusa con Holdings Pro, il server conserva un saldo associato a un identificativo casuale (un UUID che l'app genera per te e sincronizza tramite iCloud, così vale su tutti i tuoi dispositivi; non è il tuo Apple ID, nome o email e non deriva dal dispositivo). Finché un'analisi è conservata (vedi sopra) il server registra accanto a essa l'identificativo dell'installazione e questo identificativo casuale, quindi per quel tempo i due sono collegati. Il saldo contiene i crediti, l'abbonamento (piano, scadenza, analisi usate nel mese), gli identificativi delle transazioni Apple già conteggiate e gli eventuali rimborsi. La ricevuta firmata che Apple dà all'app viene verificata e scartata, mai conservata. Questi dati vengono cancellati automaticamente, insieme agli eventuali crediti non usati, dopo 2 anni senza alcuna attività. Per attività si intende aprire o usare l'analisi con IA, acquistare o ripristinare un acquisto, oppure un evento dell'App Store come un rinnovo o un rimborso; un abbonamento attivo conta come attività finché non termina. Per farli cancellare prima, scrivi al contatto qui sotto. Poiché non sappiamo chi sei, troviamo i tuoi dati dall'identificativo casuale: nell'app apri Impostazioni › Analisi IA: cancellazione dati, dove puoi copiare l'identificativo o scriverci un'email con l'identificativo già inserito (la sezione compare dopo aver accettato l'avviso dell'analisi con IA). Se non puoi aprire l'app, va bene anche l'ID ordine dell'acquisto, dalla ricevuta di Apple. Cancelliamo poi il saldo e i dati che collegano a esso i tuoi acquisti Apple; conserviamo solo il segno anonimo di un acquisto rimborsato da Apple, perché non venga conteggiato di nuovo. I crediti e le analisi rimasti vanno persi con la cancellazione del saldo. Se hai accettato l'avviso dell'analisi con IA, l'app ripresenta i tuoi acquisti attivi (Holdings Pro, un abbonamento attivo) a ogni avvio, quindi per essi viene creato un nuovo saldo al successivo avvio, a meno che tu non elimini l'app.</li>
+            <li><em>Log.</em> I log tecnici registrano percorso, esito, durata e consumo di token del modello, mai il contenuto, né il tuo identificativo né le ricevute. Cloudflare li conserva per al massimo 7 giorni.</li>
+        </ul>
+        <p><strong>Sul tuo dispositivo.</strong> Le tue analisi sono salvate sul dispositivo (le ultime 100) per poterle rileggere; puoi eliminarle una a una o tutte insieme dalla cronologia dell'Advisor. Le risposte al questionario sono salvate sul dispositivo e sincronizzate tramite iCloud, come il resto dei tuoi dati.</p>
+        <p><strong>Base giuridica e finalità (GDPR).</strong> I dati sono usati solo per fornire l'analisi che richiedi (tua azione esplicita di avviarla). Non sono usati per pubblicità, tracciamento o profilazione e non sono venduti. La base giuridica è il tuo consenso esplicito, che dai accettando l'avviso dell'analisi con IA e avviandola, e che puoi revocare in qualsiasi momento smettendo di usare la funzione o chiedendoci di cancellare i dati (art. 6(1)(a) GDPR) e, per gli acquisti, il contratto con te (art. 6(1)(b)). Cloudflare e Anthropic possono trattare dati fuori dallo Spazio economico europeo, anche negli Stati Uniti; i trasferimenti si basano sulle Clausole contrattuali standard o su altre garanzie previste dai loro termini di trattamento dei dati. Hai diritto di accesso, rettifica, cancellazione, limitazione e portabilità dei dati e di reclamo all'autorità di controllo (in Italia, il Garante per la protezione dei dati personali).</p>
+        <p><strong>Non è una consulenza.</strong> L'analisi è generata da un'intelligenza artificiale, può contenere errori e ha solo scopo informativo ed educativo. Non è una consulenza finanziaria, fiscale o legale personalizzata.</p>
+        <p><strong>Le tue scelte.</strong> Puoi usare Holdings senza mai eseguire un'analisi. Sul nostro server non resta nessun dato del portafoglio né analisi leggibile, e il risultato cifrato si cancella da solo come descritto sopra. Per rimuovere l'analisi salvata sul dispositivo, eliminala dalla cronologia dell'Advisor o elimina i dati dell'app. Per far cancellare il saldo dei tuoi acquisti (l'identificativo casuale e i suoi dati; in Impostazioni › Analisi IA: cancellazione dati trovi l'identificativo e una scorciatoia email), o per qualsiasi domanda o richiesta: gianfilippo.cisternino@gmail.com.</p>
 
         <h2>I tuoi diritti</h2>
         <p>Puoi eliminare i tuoi dati in qualsiasi momento rimuovendo l'App dai tuoi dispositivi e cancellando i dati dal tuo account iCloud in Impostazioni di iOS &gt; [il tuo nome] &gt; iCloud &gt; Gestisci spazio. Nello stesso pannello puoi anche disattivare la sincronizzazione iCloud per l'App.</p>
-        <p>Se ti trovi nell'UE o in un'altra giurisdizione con leggi sulla privacy applicabili (GDPR, CCPA e simili), hai il diritto di chiedere informazioni sui dati che potremmo avere su di te, di correggerli o di farli cancellare. Poiché gli unici dati in nostro possesso sono quelli anonimi di Firebase Analytics descritti sopra (non legati a identificativi personali sotto il nostro controllo), la portata pratica di queste richieste è limitata, ma puoi comunque contattarci.</p>
+        <p>Se ti trovi nell'UE o in un'altra giurisdizione con leggi sulla privacy applicabili (GDPR, CCPA e simili), hai il diritto di chiedere informazioni sui dati che potremmo avere su di te, di correggerli o di farli cancellare. Poiché gli unici dati in nostro possesso sono quelli anonimi di Firebase Analytics descritti sopra e, se usi l'analisi con IA facoltativa, i dati descritti in <a href="#ai-analysis">Analisi con IA</a> (che troviamo da un identificativo casuale, non dal tuo nome), la portata pratica di queste richieste è limitata, ma puoi comunque contattarci.</p>
 
         <h2>Modifiche a questa informativa</h2>
         <p>Potremmo aggiornare questa informativa di tanto in tanto. Le modifiche saranno pubblicate in questa pagina con la data aggiornata.</p>
