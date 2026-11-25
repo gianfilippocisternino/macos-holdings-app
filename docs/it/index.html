@@ -81,7 +81,7 @@
         "Totali multivaluta con conversione FX automatica",
         "13 categorie di asset, inclusi veicoli, quote societarie e previdenza",
         "Storico mensile con grafici e ripartizioni per categoria",
-        "Analisi AI facoltativa dell'intero portafoglio: punteggio di rischio, concentrazioni, diversificazione e spunti, da un riepilogo anonimo preparato sul tuo dispositivo",
+        "Analisi AI facoltativa dell'intero portafoglio (in arrivo): punteggio di rischio, concentrazioni, diversificazione e spunti, da un riepilogo anonimo preparato sul tuo dispositivo",
         "Sincronizzazione iCloud privata tra Mac, iPad e iPhone — nessun account e nessun server Holdings nella sincronizzazione",
         "Pensata per iPhone Duo: dashboard ampia da aperto, stabile quando lo pieghi e lo ruoti"
       ],
@@ -201,6 +201,7 @@
         .advisor-list li::before { content: "✦"; position: absolute; left: 0; top: 10px; color: #8e4ec6; }
         .advisor-list strong { color: #1d1d1f; }
         .advisor-note { font-size: 13px; color: #6e6e73; line-height: 1.5; }
+        .soon-pill { display: inline-block; margin-left: 8px; padding: 2px 10px; border-radius: 999px; background: #0071e3; color: #fff; font-size: 12px; font-weight: 600; letter-spacing: 0; text-transform: none; vertical-align: middle; }
         .advisor-shot { flex: 0 0 280px; }
         .advisor-shot img { width: 100%; height: auto; display: block; border-radius: 28px; box-shadow: 0 12px 40px rgba(0,0,0,.18); }
         @media (max-width: 720px) { .advisor-grid { flex-direction: column; } .advisor-shot { flex-basis: auto; max-width: 260px; } }
@@ -592,7 +593,7 @@
     </section>
 
     <section class="advisor" id="ai-analysis">
-        <p class="eyebrow">Analisi AI</p>
+        <p class="eyebrow">Analisi AI <span class="soon-pill">In arrivo</span></p>
         <h2>Un secondo parere su tutto il tuo portafoglio.</h2>
         <div class="advisor-grid">
             <div class="advisor-text">
@@ -604,7 +605,7 @@
                     <li><strong>Richieste verificate.</strong> App Attest di Apple controlla che le richieste arrivino da una copia autentica di Holdings, senza account né registrazione.</li>
                     <li><strong>Esporta e storico.</strong> Conserva ogni report sui tuoi dispositivi, confrontali nel tempo, esportali in PDF.</li>
                 </ul>
-                <p class="advisor-note">Facoltativa e separata da Pro: si paga a consumo (abbonamento o pacchetti di analisi, tramite App Store) e tutto il resto di Holdings funziona senza. I dati partono solo quando avvii un'analisi, dopo aver accettato l'avviso, e vengono inoltrati ad Anthropic, che esegue l'IA (per impostazione predefinita non li conserva; l'informativa indica le eccezioni). Dettagli: <a href="privacy.html#ai-analysis">informativa privacy sull'analisi con IA</a>. Solo a scopo informativo, non è consulenza finanziaria.</p>
+                <p class="advisor-note"><strong>In arrivo con un aggiornamento di Holdings.</strong> Facoltativa e separata da Pro: si paga a consumo (abbonamento o pacchetti di analisi, tramite App Store) e tutto il resto di Holdings funziona senza. I dati partono solo quando avvii un'analisi, dopo aver accettato l'avviso, e vengono inoltrati ad Anthropic, che esegue l'IA (per impostazione predefinita non li conserva; l'informativa indica le eccezioni). Dettagli: <a href="privacy.html#ai-analysis">informativa privacy sull'analisi con IA</a>. Solo a scopo informativo, non è consulenza finanziaria.</p>
             </div>
             <div class="advisor-shot">
                 <img src="../assets/screenshots/advisor-iphone-it.webp" alt="Analisi AI in Holdings su iPhone: punteggio di rischio 64 su 100 con un report di esempio" width="520" height="1131" loading="lazy">
@@ -692,7 +693,7 @@
             <!-- TODO prezzi: aggiungere i prezzi di abbonamento e pacchetti AI quando disponibili da App Store Connect (nessuna chiave API disponibile, T-676) -->
             <div class="plan free">
                 <h3>Analisi AI</h3>
-                <p class="price">Facoltativa · acquisto in app</p>
+                <p class="price">In arrivo · acquisto in app facoltativo</p>
                 <p>Un abbonamento o pacchetti di analisi, acquistati nell'app tramite App Store e separati da Pro. I prezzi sono mostrati nell'app prima dell'acquisto.</p>
             </div>
         </div>

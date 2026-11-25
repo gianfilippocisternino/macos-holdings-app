@@ -81,7 +81,7 @@
         "Track 13 asset categories including vehicles, equity stakes and pension",
         "Monthly history with charts and category breakdowns",
         "Geography and sector composition breakdown",
-        "Optional AI analysis of the whole portfolio: risk score, concentrations, diversification and ideas, from an anonymous summary built on your device",
+        "Optional AI analysis of the whole portfolio (coming soon): risk score, concentrations, diversification and ideas, from an anonymous summary built on your device",
         "Private iCloud sync across your Mac, iPad and iPhone — no accounts, and no Holdings server in the sync",
         "Designed for iPhone Duo: a wide dashboard when unfolded, steady as you fold and rotate it"
       ],
@@ -201,6 +201,7 @@
         .advisor-list li::before { content: "✦"; position: absolute; left: 0; top: 10px; color: #8e4ec6; }
         .advisor-list strong { color: #1d1d1f; }
         .advisor-note { font-size: 13px; color: #6e6e73; line-height: 1.5; }
+        .soon-pill { display: inline-block; margin-left: 8px; padding: 2px 10px; border-radius: 999px; background: #0071e3; color: #fff; font-size: 12px; font-weight: 600; letter-spacing: 0; text-transform: none; vertical-align: middle; }
         .advisor-shot { flex: 0 0 280px; }
         .advisor-shot img { width: 100%; height: auto; display: block; border-radius: 28px; box-shadow: 0 12px 40px rgba(0,0,0,.18); }
         @media (max-width: 720px) { .advisor-grid { flex-direction: column; } .advisor-shot { flex-basis: auto; max-width: 260px; } }
@@ -592,7 +593,7 @@
     </section>
 
     <section class="advisor" id="ai-analysis">
-        <p class="eyebrow">AI analysis</p>
+        <p class="eyebrow">AI analysis <span class="soon-pill">Coming soon</span></p>
         <h2>A second opinion on your whole portfolio.</h2>
         <div class="advisor-grid">
             <div class="advisor-text">
@@ -604,7 +605,7 @@
                     <li><strong>Verified requests.</strong> Apple's App Attest checks that requests come from a genuine copy of Holdings, with no account or sign-up.</li>
                     <li><strong>Export and history.</strong> Keep every report on your devices, compare over time, export as PDF.</li>
                 </ul>
-                <p class="advisor-note">Optional and separate from Pro: it is paid per use (a subscription or packs of analyses, through the App Store), and everything else in Holdings works without it. Your data is sent only when you start an analysis, after you accept the disclaimer, and is passed on to Anthropic, which runs the AI (by default it does not retain it; the policy states the exceptions). Details: <a href="privacy.html#ai-analysis">AI analysis privacy policy</a>. Informational only, not financial advice.</p>
+                <p class="advisor-note"><strong>Coming soon in a Holdings update.</strong> Optional and separate from Pro: it is paid per use (a subscription or packs of analyses, through the App Store), and everything else in Holdings works without it. Your data is sent only when you start an analysis, after you accept the disclaimer, and is passed on to Anthropic, which runs the AI (by default it does not retain it; the policy states the exceptions). Details: <a href="privacy.html#ai-analysis">AI analysis privacy policy</a>. Informational only, not financial advice.</p>
             </div>
             <div class="advisor-shot">
                 <img src="assets/screenshots/advisor-iphone-en.webp" alt="AI analysis in Holdings on iPhone: risk score 64 out of 100 with an example report" width="520" height="1131" loading="lazy">
@@ -692,7 +693,7 @@
             <!-- TODO prezzi: aggiungere i prezzi di abbonamento e pacchetti AI quando disponibili da App Store Connect (nessuna chiave API disponibile, T-676) -->
             <div class="plan free">
                 <h3>AI analysis</h3>
-                <p class="price">Optional · in-app purchase</p>
+                <p class="price">Coming soon · optional in-app purchase</p>
                 <p>A subscription or packs of analyses, bought in the app through the App Store and separate from Pro. Prices are shown in the app before you buy.</p>
             </div>
         </div>
